@@ -1,0 +1,17 @@
+# Raw downloads stay local (re-fetchable; some large or licensed)
+data/raw/*
+!data/raw/.gitkeep
+
+# Built outputs
+output/*
+!output/.gitkeep
+
+# Confidential survey responses - never commit
+survey/responses/
+
+__pycache__/
+.pytest_cache/
+.venv/
+.DS_Store
+*.gpkg-journal
+.env

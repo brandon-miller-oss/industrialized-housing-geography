@@ -1,0 +1,5 @@
+producer_id,name,parent_company,hq_city,hq_state,ownership_type,website,notes,source_id,verified_date
+fading-west,Fading West,,Buena Vista,CO,private,,Colorado modular manufacturer/developer - complete details,,
+timber-age-systems,Timber Age Systems,,Durango,CO,private,,IHIP round 3,SRC11,2026-10-19
+phoenix-haus,Phoenix Haus,,Grand Junction,CO,private,,IHIP round 3,SRC11,2026-10-19
+huron-components,Huron Components,,Littleton,CO,private,,IHIP round 3,SRC11,2026-10-19

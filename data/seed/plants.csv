@@ -1,0 +1,5 @@
+plant_id,producer_id,plant_name,city,state_abbr,county_fips,lat,lon,geocode_method,code_basis,product_type,certifications,status,opened_year,closed_year,capacity_units_yr,source_id,verified_date
+fading-west-bv,fading-west,Fading West - Buena Vista,Buena Vista,CO,,,,,STATE_MODULAR,modular_volumetric,CO_DOH_FB (verify),active,,,,,
+timber-age-durango,timber-age-systems,Timber Age Systems,Durango,CO,,,,,STATE_MODULAR,panelized,,active,,,,SRC11,
+phoenix-haus-gj,phoenix-haus,Phoenix Haus,Grand Junction,CO,,,,,STATE_MODULAR,panelized,,active,,,,SRC11,
+huron-littleton,huron-components,Huron Components,Littleton,CO,,,,,STATE_MODULAR,panelized,,active,,,,SRC11,
