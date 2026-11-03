@@ -4,6 +4,14 @@ Mapping where modular and manufactured housing is produced and used across the U
 
 University of Denver · Center for Housing Research and Innovative Solutions (CHRIS) · Graduate research project, 2026–27
 
+## Scope and fit with CHRIS
+
+- **Core region: the Mountain West** (AZ, CO, ID, MT, NV, NM, UT, WY; flagged `mountain_west` in `states`), with Colorado in the greatest depth. National plant and shipment data are kept as context because the region imports most of its manufactured homes.
+- **Regional data library:** every table is sourced, documented and reproducible, so the outputs can go into the CHRIS data library and an industrialized-housing chapter of the annual *State of Housing in Colorado* report.
+- **Terner Housing Policy Simulator:** the `cost_schedule` table collects factory-built vs. site-built cost and schedule observations in the simulator's unit (development cost per unit). These can inform a factory-built scenario for Denver, one of the simulator's covered cities.
+- **CHFA:** tracks CHFA's Prop 123 Modular Finance and IHIP factory loans, plus factory-built language in the LIHTC Qualified Allocation Plan.
+- **Climate resilience:** FEMA National Risk Index and USFS wildfire layers at the county and tract level, plus a `resilience` policy category (SB25-002 includes wildfire-risk provisions).
+
 ## What this repo builds
 
 A reproducible database with five linked layers:
@@ -15,6 +23,8 @@ A reproducible database with five linked layers:
 | **Usage / stock** | Where are factory-built homes already on the ground? | ACS (mobile homes by tract), mobile home parks |
 | **Policy** | What rules help or hinder them? | CO legislation (HB22-1282, SB25-002), multistate scan |
 | **Need** | Where is affordability pressure highest? | ACS income, home values and rent burden; HUD AMI; CHAS |
+| **Cost / schedule** | How much cheaper or faster is factory-built here? | Survey, developer pro formas, project records |
+| **Hazards** | Where do wildfire risk and housing need overlap? | FEMA National Risk Index, USFS Wildfire Risk to Communities |
 
 The build produces `output/ihg.sqlite` (relational) and `output/ihg.gpkg` (opens directly in ArcGIS Pro or QGIS).
 
@@ -58,7 +68,10 @@ python scripts/fetch_acs.py --year 2023 --level state
 python scripts/fetch_acs.py --year 2023 --level county
 python scripts/fetch_acs.py --year 2023 --level tract --state 08
 
-# 4. Build
+# 4. Hazards (download the NRI county / tract CSV from hazards.fema.gov/nri/data-resources)
+python scripts/load_nri.py data/raw/NRI_Table_Counties.zip --level county --version <release>
+
+# 5. Build
 python scripts/build_db.py --states-shp data/raw/cb_2023_us_state_20m.zip
 ```
 
@@ -66,7 +79,10 @@ python scripts/build_db.py --states-shp data/raw/cb_2023_us_state_20m.zip
 
 - [x] Source inventory, schema, data dictionary
 - [x] Parsers: MHI plant list, Census shipments, ACS, geocoder, DB/GeoPackage build (tested on synthetic fixtures)
-- [x] Seed: 3 Colorado policies, IHIP round 3 awards, 4 Colorado factory-built producers
+- [x] Seed: 6 Colorado policies (incl. CHFA Prop 123 Modular, IHIP/P123 2025, 2027-28 QAP draft), IHIP round 3 awards, 4 Colorado factory-built producers
+- [x] CHRIS alignment: Mountain West flag, cost_schedule table (Terner inputs), hazards table + NRI loader
+- [ ] Ask CHRIS which Terner simulator inputs (cost, timeline) can be adjusted for a factory-built scenario
+- [ ] Compile CHFA Prop 123 Modular / IHIP loan recipients; read the full 2027-28 QAP once final
 - [ ] Run the parsers on real downloads and check totals against the source PDFs/tables
 - [ ] Request the CO DOH certified manufacturer facility list
 - [ ] Compile all IHIP rounds; add Fading West and other CO projects to `projects`
@@ -79,4 +95,6 @@ python scripts/build_db.py --states-shp data/raw/cb_2023_us_state_20m.zip
 2. Unit of analysis for policy: state only, or also cities and counties (Colorado first)?
 3. Do CHRIS or DU have existing industry contacts or data agreements (MHI, MBI, CO DOH)?
 4. Is the survey in scope this year, and whose IRB covers it?
-5. Deliverables: a public map or dashboard, a policy brief, a paper, or all three?
+5. Deliverables: a public map or dashboard, a policy brief, a paper, or all three? Could this be a chapter of the *State of Housing in Colorado* report?
+6. Can the project run a factory-built scenario in the Terner simulator for Denver, and which inputs would it need?
+7. Is CHFA (a CHRIS funder) open to sharing Prop 123 Modular / IHIP loan outcomes?

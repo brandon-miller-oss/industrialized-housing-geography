@@ -4,7 +4,7 @@
 
 **Purpose:** Collect what public data does not report: where factory-built homes are shipped, who buys them, and how policy affects demand.
 
-**Target respondents:** HUD-Code plants (MHI plant list), state-certified modular and panelized manufacturers (starting with Colorado DOH and neighboring states), and IHIP recipients.
+**Target respondents:** Mountain West core (AZ, CO, ID, MT, NV, NM, UT, WY): state-certified modular and panelized manufacturers, IHIP and CHFA Prop 123 borrowers, and HUD-Code plants that ship into the region (MHI plant list). A shorter version could go to Colorado affordable housing developers who have used factory-built units.
 
 **Confidentiality:** Individual responses are confidential. Results are reported only in aggregates of 3 or more firms.
 
@@ -31,9 +31,21 @@
 12. Share of units going to income-restricted or subsidized projects (LIHTC, Prop 123, HOME, other)
 13. Average wholesale price per home or per square foot (ranges are fine)
 
+### D2. Cost and schedule (feeds the Terner simulator scenario)
+*Ask for a recent typical project. Ranges are fine. Maps to the `cost_schedule` table.*
+
+13a. Product and housing type of the reference project (e.g., modular townhome, panelized multifamily)
+13b. Factory price per square foot, delivered to the site
+13c. Transportation and set/crane cost per unit
+13d. Site work cost per square foot (foundation, utilities, finish-out) if known, or typical share of total cost
+13e. Months in the factory vs. months on site; total months from permit to certificate of occupancy
+13f. Your estimate of the schedule for the same project built on site
+13g. How much does cost change for wildfire-hardened or high-snow-load / high-altitude specifications?
+
 ### E. Policy and barriers
 14. Rate each as a barrier to selling in a jurisdiction (1–5): local zoning · local building code amendments · permitting time · transportation limits · financing/appraisal · NIMBY opposition · foundation/site costs
-15. Have state incentives (e.g., Colorado IHIP) changed your production or market? How?
+15. Have state incentives (e.g., Colorado IHIP, CHFA Prop 123 modular loans) changed your production or market? How?
+15a. Have you supplied homes for disaster or wildfire rebuilding? Where and how many?
 16. Which states or cities are easiest and hardest to sell into, and why? (open-ended)
 
 ### F. Follow-up

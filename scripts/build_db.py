@@ -31,6 +31,8 @@ FEEDS = {
     "projects": [SEED / "projects.csv", PROCESSED / "projects*.csv"],
     "policies": [SEED / "policies.csv", PROCESSED / "policies*.csv"],
     "demographics": [PROCESSED / "acs_*.csv"],
+    "cost_schedule": [SEED / "cost_schedule.csv", PROCESSED / "cost_schedule*.csv"],
+    "hazards": [PROCESSED / "hazards_*.csv"],
 }
 
 
@@ -61,7 +63,7 @@ def load_table(con, table, files):
 
 def state_summary(con):
     q = """
-    SELECT s.state_fips, s.state_abbr, s.state_name, s.region, s.division,
+    SELECT s.state_fips, s.state_abbr, s.state_name, s.region, s.division, s.mountain_west,
       (SELECT COUNT(*) FROM plants p WHERE p.state_abbr = s.state_abbr AND p.status='active') AS plants_active,
       (SELECT COUNT(*) FROM plants p WHERE p.state_abbr = s.state_abbr AND p.code_basis='HUD_CODE'
               AND p.status='active') AS plants_hud_code,

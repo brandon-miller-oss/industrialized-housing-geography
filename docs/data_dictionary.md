@@ -13,8 +13,9 @@ The full column definitions are in [`schema/schema.sql`](../schema/schema.sql). 
 
 ```
 producers 1──* plants 1──* producer_distribution *──1 (destination geography)
-producers 1──* projects
-states 1──* shipments_state_year | policies | demographics (geo_level='state')
+producers 1──* projects 1──* cost_schedule
+states 1──* shipments_state_year | policies | demographics | hazards (geo_level='state')
+county / tract GEOIDs join demographics <-> hazards <-> projects
 sources 1──* every table
 ```
 
@@ -38,6 +39,11 @@ sources 1──* every table
 | `park_protection` | Mobile home park resident protections, right of first refusal |
 | `finance_titling` | Real-property titling and chattel vs. mortgage financing rules |
 | `funding_program` | Affordable housing funds usable for factory-built (e.g., Prop 123, LIHTC QAP points) |
+| `resilience` | Wildfire/disaster rebuilding, hazard-specific construction standards |
+
+**`construction_method`** (cost_schedule): `site_built` · `manufactured` · `modular_volumetric` · `panelized` · `hybrid`
+
+**`mountain_west`** (states): 1 for AZ, CO, ID, MT, NV, NM, UT and WY, the CHRIS core region. Other states are national context.
 
 **Policy `status`**: `proposed` · `enacted` · `rules_pending` · `in_effect` · `repealed`
 

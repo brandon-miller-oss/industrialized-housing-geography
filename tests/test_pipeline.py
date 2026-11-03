@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import build_db  # noqa: E402
 import fetch_acs  # noqa: E402
 import geocode_plants  # noqa: E402
+import load_nri  # noqa: E402
 import load_shipments  # noqa: E402
 import parse_mhi_plant_list  # noqa: E402
 
@@ -119,6 +120,9 @@ def test_build_db(tmp_path, monkeypatch):
                  ).to_csv(proc / "plants_mhi.csv", index=False)
     pd.DataFrame([{"state_fips": "08", "year": 2022, "units": 1300, "code_basis": "HUD_CODE",
                    "source_id": "SRC01"}]).to_csv(proc / "shipments_state_year.csv", index=False)
+    load_nri.transform(pd.DataFrame({"STCOFIPS": ["8031"], "WFIR_RISKS": ["55.1"], "WFIR_RISKR": ["Relatively Moderate"],
+                                     "RISK_SCORE": ["90"], "SOVI_SCORE": ["60"], "RESL_SCORE": ["50"],
+                                     "WFIR_EALT": ["1000"]}), "county", "test").to_csv(proc / "hazards_nri_county.csv", index=False)
     feeds = {k: [p if p.parent != build_db.PROCESSED else proc / p.name for p in v]
              for k, v in build_db.FEEDS.items()}
     monkeypatch.setattr(build_db, "FEEDS", feeds)
@@ -126,8 +130,8 @@ def test_build_db(tmp_path, monkeypatch):
     build_db.main()
     con = sqlite3.connect(tmp_path / "out" / "ihg.sqlite")
     assert con.execute("SELECT COUNT(*) FROM states").fetchone()[0] == 51
-    assert con.execute("SELECT COUNT(*) FROM sources").fetchone()[0] == 19
-    assert con.execute("SELECT COUNT(*) FROM policies WHERE state_abbr='CO'").fetchone()[0] == 3
+    assert con.execute("SELECT COUNT(*) FROM sources").fetchone()[0] == 24
+    assert con.execute("SELECT COUNT(*) FROM policies WHERE state_abbr='CO'").fetchone()[0] == 6
     assert con.execute("SELECT COUNT(*) FROM plants").fetchone()[0] == 5   # 4 seed + 1
     assert con.execute("PRAGMA foreign_key_check").fetchall() == []
     import geopandas as gpd
@@ -135,4 +139,15 @@ def test_build_db(tmp_path, monkeypatch):
     assert len(g) == 1 and g.crs.to_epsg() == 4326
     s = gpd.read_file(tmp_path / "out" / "ihg.gpkg", layer="state_summary")
     co = s[s.state_abbr == "CO"].iloc[0]
+    assert co.mountain_west == 1 and s.mountain_west.sum() == 8
+    assert con.execute("SELECT COUNT(*) FROM hazards").fetchone()[0] == 1
     assert co.plants_active == 4 and co.plants_hud_code == 0 and co.ship_latest_units == 1300
+
+
+def test_load_nri():
+    df = pd.DataFrame({"TRACTFIPS": ["8031000102"], "WFIR_RISKS": ["97.5"], "WFIR_RISKR": ["Very High"],
+                       "RISK_SCORE": ["80"], "SOVI_SCORE": ["70"]})
+    out = load_nri.transform(df, "tract", "1.20")
+    r = out.iloc[0]
+    assert r.geoid == "08031000102" and r.wildfire_risk_score == 97.5 and r.wildfire_risk_rating == "Very High"
+    assert "community_resilience" not in out.columns     # missing field reported, not invented
