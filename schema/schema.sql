@@ -62,8 +62,57 @@ CREATE TABLE IF NOT EXISTS plants (
     opened_year        INTEGER,
     closed_year        INTEGER,
     capacity_units_yr  INTEGER,                  -- from survey / company disclosures
+    -- Modular factory database fields
+    market_segment     TEXT CHECK (market_segment IN ('SF','MF','SF_MF','COMMERCIAL','UNKNOWN')),
+    residential        INTEGER DEFAULT 1,        -- 0 = commercial/non-residential only (out of scope)
+    naics_code         TEXT,                     -- 321992 modular/prefab wood | 321991 manufactured | 332311 steel
+    website            TEXT,
+    hia_id             TEXT,                     -- matching record ID in the Housing Innovation Alliance database
+    match_status       TEXT,                     -- matched | new | review (see scripts/match_records.py)
+    in_survey_frame    INTEGER DEFAULT 0,        -- 1 = include in manufacturer survey mailing
+    found_via          TEXT,                     -- directory | state_list | web_search | hia | cbp_followup
     source_id          TEXT REFERENCES sources(source_id),
-    verified_date      TEXT
+    verified_date      TEXT,
+    notes              TEXT
+);
+
+-- Survey contacts. PII: lives in data/private/ (git-ignored), never committed.
+CREATE TABLE IF NOT EXISTS contacts (
+    contact_id     INTEGER PRIMARY KEY AUTOINCREMENT,
+    plant_id       TEXT REFERENCES plants(plant_id),
+    producer_id    TEXT REFERENCES producers(producer_id),
+    contact_name   TEXT,
+    title          TEXT,
+    email          TEXT,
+    phone          TEXT,
+    is_primary     INTEGER DEFAULT 1,
+    contact_source TEXT,                         -- website | hia | state_list | referral
+    verified_date  TEXT
+);
+
+-- Which states have approved a factory to ship in: a public proxy for shipment flows.
+CREATE TABLE IF NOT EXISTS state_approvals (
+    plant_id          TEXT REFERENCES plants(plant_id),
+    approving_state   TEXT REFERENCES states(state_abbr),
+    program           TEXT,                      -- e.g. 'NY Manufactured Housing Program', 'CO DOH FB'
+    listed_name       TEXT,                      -- name exactly as on the state list
+    listed_city       TEXT,
+    listed_state      TEXT,                      -- plant location as listed
+    approval_status   TEXT,                      -- active | expired | unknown
+    list_date         TEXT,                      -- date the list was pulled
+    source_id         TEXT REFERENCES sources(source_id),
+    PRIMARY KEY (plant_id, approving_state, program)
+);
+
+-- Census County Business Patterns establishment counts - completeness benchmark.
+CREATE TABLE IF NOT EXISTS cbp_establishments (
+    state_fips      TEXT REFERENCES states(state_fips),
+    naics_code      TEXT,
+    year            INTEGER,
+    establishments  INTEGER,
+    employees       INTEGER,
+    source_id       TEXT REFERENCES sources(source_id),
+    PRIMARY KEY (state_fips, naics_code, year)
 );
 
 -- Public aggregate shipments (SRC01/SRC04). HUD-Code only unless noted.

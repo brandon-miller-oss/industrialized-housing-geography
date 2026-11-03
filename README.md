@@ -30,6 +30,38 @@ The build produces `output/ihg.sqlite` (relational) and `output/ihg.gpkg` (opens
 
 Start with [`docs/source_inventory.md`](docs/source_inventory.md), which lists every dataset, its geography and its gaps.
 
+## Factory database workflow (current priority)
+
+Goal: a complete, de-duplicated list of factories producing residential modular products (single-family and multifamily), with contacts, ready for the manufacturer survey.
+
+The master table is `data/processed/plants_modular.csv`. Contacts are kept separately in `data/private/contacts.csv`, which is git-ignored, and follow the column template in `data/reference/contacts_template.csv`.
+
+```bash
+# 1. Import the team's existing factory list (first run: everything comes in as "new")
+python scripts/ingest_list.py data/private/team_factory_list.xlsx --kind directory \
+    --name-col "Company" --state-col "State" --city-col "City"
+
+# 2. Merge the Housing Innovation Alliance database (fills hia_id, flags near-duplicates)
+python scripts/ingest_list.py data/private/hia_export.csv --kind hia \
+    --name-col "Company" --state-col "State" --city-col "City" --id-col "ID" --source-id SRC26
+
+# 3. Add each state's approved-manufacturer list (also records factory -> approved state)
+python scripts/ingest_list.py data/raw/ny_certified_entities.csv --kind state_list --approving-state NY \
+    --program "NY Manufactured Housing Program" --name-col "<name col>" --state-col "<state col>" \
+    --city-col "<city col>" --source-id SRC10
+
+# 4. Benchmark coverage by state against Census County Business Patterns (NAICS 321992)
+python scripts/fetch_cbp.py --year 2023
+python scripts/completeness_check.py --year 2023      # -> output/completeness_2023.csv
+
+# 5. Export the survey mailing list (output is git-ignored)
+python scripts/export_survey_frame.py
+```
+
+Matching rules: a name/state score of 0.92 or higher merges automatically. A score from 0.75 to 0.92 is added but flagged `review`, with the likely duplicate listed in `output/review_*.csv`. Anything lower becomes a new plant. Generic words ("Homes", "Modular", "Inc.") are ignored when comparing names. Nothing is ever deleted automatically.
+
+`state_approvals` records which states have approved each factory to ship in. This is a public proxy for cross-state shipment flows until survey results arrive.
+
 ## Repo layout
 
 ```
@@ -37,11 +69,12 @@ data/
   reference/   source_inventory.csv, states.csv          (committed)
   seed/        hand-compiled records: policies, IHIP awards, CO producers (committed)
   raw/         downloads: PDFs, Excel, shapefiles          (git-ignored)
-  processed/   script outputs, tidy CSVs                   (committed when small)
+  processed/   script outputs, tidy CSVs; plants_modular.csv = factory master
+  private/     contacts, partner exports                   (git-ignored)
 docs/          source inventory, data dictionary
 schema/        schema.sql
 scripts/       one script per source + build_db.py
-survey/        manufacturer survey draft (responses are git-ignored)
+survey/        early draft questions, kept for reference (the project survey is led by the survey consultant)
 tests/         offline tests with synthetic fixtures
 output/        built database + GeoPackage                 (git-ignored)
 ```
@@ -83,6 +116,10 @@ python scripts/build_db.py --states-shp data/raw/cb_2023_us_state_20m.zip
 - [x] CHRIS alignment: Mountain West flag, cost_schedule table (Terner inputs), hazards table + NRI loader
 - [ ] Ask CHRIS which Terner simulator inputs (cost, timeline) can be adjusted for a factory-built scenario
 - [ ] Compile CHFA Prop 123 Modular / IHIP loan recipients; read the full 2027-28 QAP once final
+- [x] Factory database tooling: list ingest and matching, state approvals, CBP benchmark, survey frame export
+- [ ] Import the team's existing factory list and the HIA database; resolve review flags
+- [ ] Collect state approved-manufacturer lists (start with the largest importing states)
+- [ ] Finalize the survey frame for the end-of-November launch
 - [ ] Run the parsers on real downloads and check totals against the source PDFs/tables
 - [ ] Request the CO DOH certified manufacturer facility list
 - [ ] Compile all IHIP rounds; add Fading West and other CO projects to `projects`

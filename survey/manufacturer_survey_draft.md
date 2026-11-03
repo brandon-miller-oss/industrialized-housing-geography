@@ -1,6 +1,6 @@
 # Draft Manufacturer Survey: Industrialized Housing Production and Distribution
 
-**Status:** Working draft for discussion with the CHRIS faculty lead. Check whether IRB review is needed before any outreach.
+**Status:** Superseded. The project's manufacturer survey is designed and fielded by the team's survey consultant. This early draft is kept as a reference, mainly for the cost/schedule (D2) and resilience questions, which can be offered as suggestions.
 
 **Purpose:** Collect what public data does not report: where factory-built homes are shipped, who buys them, and how policy affects demand.
 

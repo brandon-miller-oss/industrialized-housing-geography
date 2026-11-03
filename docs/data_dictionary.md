@@ -13,6 +13,8 @@ The full column definitions are in [`schema/schema.sql`](../schema/schema.sql). 
 
 ```
 producers 1──* plants 1──* producer_distribution *──1 (destination geography)
+plants 1──* state_approvals (factory -> states approved to ship into) | contacts (private)
+states 1──* cbp_establishments (completeness benchmark)
 producers 1──* projects 1──* cost_schedule
 states 1──* shipments_state_year | policies | demographics | hazards (geo_level='state')
 county / tract GEOIDs join demographics <-> hazards <-> projects
@@ -40,6 +42,12 @@ sources 1──* every table
 | `finance_titling` | Real-property titling and chattel vs. mortgage financing rules |
 | `funding_program` | Affordable housing funds usable for factory-built (e.g., Prop 123, LIHTC QAP points) |
 | `resilience` | Wildfire/disaster rebuilding, hazard-specific construction standards |
+
+**`market_segment`** (plants): `SF` · `MF` · `SF_MF` · `COMMERCIAL` (out of scope unless also residential) · `UNKNOWN`
+
+**`match_status`** (plants): `matched` (merged automatically) · `review` (possible duplicate, needs a person) · `new`
+
+**`found_via`** (plants): `directory` · `state_list` · `hia` · `web_search` · `cbp_followup`
 
 **`construction_method`** (cost_schedule): `site_built` · `manufactured` · `modular_volumetric` · `panelized` · `hybrid`
 

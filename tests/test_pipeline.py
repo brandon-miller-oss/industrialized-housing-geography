@@ -13,6 +13,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import build_db  # noqa: E402
+import completeness_check  # noqa: E402
+import export_survey_frame  # noqa: E402
+import fetch_cbp  # noqa: E402
+import ingest_list  # noqa: E402
 import fetch_acs  # noqa: E402
 import geocode_plants  # noqa: E402
 import load_nri  # noqa: E402
@@ -130,7 +134,7 @@ def test_build_db(tmp_path, monkeypatch):
     build_db.main()
     con = sqlite3.connect(tmp_path / "out" / "ihg.sqlite")
     assert con.execute("SELECT COUNT(*) FROM states").fetchone()[0] == 51
-    assert con.execute("SELECT COUNT(*) FROM sources").fetchone()[0] == 24
+    assert con.execute("SELECT COUNT(*) FROM sources").fetchone()[0] == 26
     assert con.execute("SELECT COUNT(*) FROM policies WHERE state_abbr='CO'").fetchone()[0] == 6
     assert con.execute("SELECT COUNT(*) FROM plants").fetchone()[0] == 5   # 4 seed + 1
     assert con.execute("PRAGMA foreign_key_check").fetchall() == []
@@ -151,3 +155,52 @@ def test_load_nri():
     r = out.iloc[0]
     assert r.geoid == "08031000102" and r.wildfire_risk_score == 97.5 and r.wildfire_risk_rating == "Very High"
     assert "community_resilience" not in out.columns     # missing field reported, not invented
+
+
+def _master():
+    m = pd.DataFrame([
+        {"plant_id": "champion-york-ne", "plant_name": "Champion Homes", "city": "York", "state_abbr": "NE"},
+        {"plant_id": "ritz-craft-pa", "plant_name": "Ritz-Craft Corporation", "city": "Mifflinburg", "state_abbr": "PA"},
+    ])
+    for c in ingest_list.MASTER_COLS:
+        if c not in m.columns:
+            m[c] = ""
+    return m[ingest_list.MASTER_COLS]
+
+
+def test_ingest_hia_and_state_list():
+    hia = pd.DataFrame({"Company": ["Ritz-Craft Corp.", "Ritz Kraft Homes", "Acme Modular LLC"],
+                        "State": ["Pennsylvania", "PA", "CO"], "City": ["Mifflinburg", "Lewisburg", "Denver"],
+                        "HIA ID": ["H1", "H2", "H3"]})
+    master, appr, review, stats = ingest_list.ingest(hia, "hia", "Company", "State", "City", "HIA ID", master=_master())
+    assert stats == {"matched": 1, "review": 1, "new": 1}
+    assert master.loc[master.plant_id == "ritz-craft-pa", "hia_id"].item() == "H1"
+    new = master[master.plant_name == "Acme Modular LLC"].iloc[0]
+    assert new.plant_id == "acme-modular-co" and new.match_status == "new" and new.hia_id == "H3"
+    assert review.iloc[0].candidate_plant_id == "ritz-craft-pa"          # near-duplicate flagged, not merged
+    ny = pd.DataFrame({"Business Name": ["RITZ-CRAFT CORPORATION", "Acme Modular"], "State": ["PA", "CO"],
+                       "City": ["MIFFLINBURG", "Denver"]})
+    master2, appr, _, stats2 = ingest_list.ingest(ny, "state_list", "Business Name", "State", "City",
+                                                  approving_state="NY", program="NY MHP", master=master)
+    assert stats2["matched"] == 2 and len(master2) == len(master)          # no duplicates created
+    assert set(appr.plant_id) == {"ritz-craft-pa", "acme-modular-co"} and set(appr.approving_state) == {"NY"}
+
+
+def test_cbp_and_completeness():
+    payload = [["ESTAB", "EMP", "NAICS2017", "state"], ["69", "5000", "321992", "42"], ["5", "300", "321992", "08"]]
+    cbp = fetch_cbp.transform(payload, "NAICS2017", 2023)
+    assert cbp.loc[cbp.state_fips == "42", "establishments"].item() == 69
+    m = _master().assign(status="active", residential="1", code_basis="STATE_MODULAR")
+    out = completeness_check.compare(m, cbp).set_index("state_abbr")
+    assert out.loc["PA", "gap"] == 68 and out.loc["PA", "flag"] == "likely missing factories"
+    assert out.loc["NE", "flag"].startswith("db has factories")
+    assert out.loc["CO", "gap"] == 5
+
+
+def test_survey_frame():
+    m = _master()
+    m["in_survey_frame"] = ["1", "1"]
+    contacts = pd.DataFrame({"plant_id": ["ritz-craft-pa"], "contact_name": ["Pat Doe"], "email": ["pat@example.com"],
+                             "is_primary": ["1"], "title": [""], "phone": [""]})
+    frame, missing = export_survey_frame.build_frame(m, contacts)
+    assert len(frame) == 2 and list(missing.plant_id) == ["champion-york-ne"]

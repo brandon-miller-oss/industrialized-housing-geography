@@ -15,3 +15,6 @@ __pycache__/
 .DS_Store
 *.gpkg-journal
 .env
+
+# Survey contacts and partner exports (PII / shared under agreement)
+data/private/

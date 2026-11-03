@@ -33,6 +33,9 @@ FEEDS = {
     "demographics": [PROCESSED / "acs_*.csv"],
     "cost_schedule": [SEED / "cost_schedule.csv", PROCESSED / "cost_schedule*.csv"],
     "hazards": [PROCESSED / "hazards_*.csv"],
+    "state_approvals": [PROCESSED / "state_approvals*.csv"],
+    "cbp_establishments": [PROCESSED / "cbp_establishments_*.csv"],
+    "contacts": [ROOT / "data" / "private" / "contacts*.csv"],   # git-ignored PII
 }
 
 
