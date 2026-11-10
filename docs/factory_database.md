@@ -48,3 +48,15 @@ A factory is in scope for the survey when it is in the U.S., builds **volumetric
    ```
 
 3. Review `git diff --stat`, then commit the CSVs with a message describing what changed (for example "Factory DB 11/09: 9 replies, VBC Tracy plant added").
+
+## Public web page (GitHub Pages)
+
+`docs/index.html` is a read-only, searchable view of the database, published with GitHub Pages from the `docs/` folder. It contains only the fields in the committed CSVs (no emails, phones, contact names, notes or outreach status). Rebuild it after each export:
+
+```bash
+python scripts/export_factory_db.py data/private/ResidentialModular_Factory_Database_<date>.xlsx
+python scripts/build_site.py
+cp output/site/index.html docs/index.html
+```
+
+Anyone with the Pages link can open the page, and the `docs/` folder's other files are published too, so keep anything private out of `docs/`.

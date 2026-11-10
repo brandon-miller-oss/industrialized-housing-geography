@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Modular Factory Database</title>
+<style>
+:root{--crimson:#BA0C2F;--gold:#A89968;--ink:#1d1d1f;--muted:#5f6368;--line:#e3e1dc;--bg:#faf9f6;--card:#fff;--chip:#f3efe4;--hover:#fbf3f4}
+@media (prefers-color-scheme:dark){:root{--ink:#ececec;--muted:#a3a3a3;--line:#34322e;--bg:#151413;--card:#1e1d1b;--chip:#2a2722;--hover:#2b1f21}}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px}
+header{background:var(--crimson);color:#fff;padding:20px 16px}
+header .wrap,main{max-width:1240px;margin:0 auto}
+h1{margin:0;font-size:22px;font-weight:700}
+header p{margin:6px 0 0;opacity:.9;font-size:13px}
+main{padding:16px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.tile{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:8px;padding:10px 12px}
+.tile b{display:block;font-size:24px;color:var(--crimson)}
+.tile span{color:var(--muted);font-size:12px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px;margin-bottom:10px}
+.filters input,.filters select{font:inherit;padding:7px 9px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);min-width:0}
+.filters input{flex:1 1 220px}
+.filters select{flex:0 1 160px}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin:6px 2px 8px;color:var(--muted);font-size:13px}
+button{font:inherit;border:1px solid var(--crimson);background:var(--crimson);color:#fff;border-radius:6px;padding:6px 12px;cursor:pointer}
+button.ghost{background:transparent;color:var(--crimson)}
+.tablewrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:860px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{position:sticky;top:0;background:var(--card);font-size:12px;color:var(--muted);cursor:pointer;user-select:none;white-space:nowrap}
+th:hover{color:var(--crimson)}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--hover)}
+td.name{font-weight:600}
+td small{display:block;color:var(--muted);font-weight:400}
+.pill{display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;background:var(--chip);white-space:nowrap}
+.pill.ok{background:#e6f2ea;color:#1e6b3a}.pill.no{background:#f6e3e6;color:#9b0a27}.pill.mid{background:#f5efdc;color:#7a6326}
+@media (prefers-color-scheme:dark){.pill.ok{background:#1f3527;color:#8fd3a5}.pill.no{background:#3a1f24;color:#f19aa9}.pill.mid{background:#3a331f;color:#e1cb86}}
+tr.detail td{background:var(--bg);cursor:default;font-size:13px}
+tr.detail dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:0}
+tr.detail dt{color:var(--muted)}
+tr.detail dd{margin:0}
+a{color:var(--crimson)}
+.states{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.states button{background:var(--chip);color:var(--ink);border:1px solid var(--line);padding:3px 9px;font-size:12px}
+.states button.on{background:var(--crimson);color:#fff;border-color:var(--crimson)}
+footer{color:var(--muted);font-size:12px;margin:18px 0 6px;line-height:1.5}
+@media (max-width:600px){h1{font-size:19px}.filters select{flex:1 1 45%}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Residential Modular Factory Database</h1>
+<p>Geography of Industrialized Housing · Center for Housing Research and Innovative Solutions (CHRIS), University of Denver · <span id="upd"></span></p>
+</div></header>
+<main>
+<div class="tiles" id="tiles"></div>
+<div class="states" id="states"></div>
+<div class="filters">
+<input id="q" type="search" placeholder="Search company, city, state, source…" aria-label="Search">
+<select id="fk" aria-label="Record type"><option value="">All record types</option><option>Factory</option><option>Candidate</option><option>Builder</option></select>
+<select id="fb" aria-label="Build method"><option value="">Any build method</option></select>
+<select id="fs" aria-label="Housing type"><option value="">Any housing type</option></select>
+<select id="fa" aria-label="Status"><option value="">Any status</option><option>Active</option><option>Unknown</option><option>Closed</option></select>
+<select id="fe" aria-label="Survey"><option value="">Survey: all</option><option>Eligible</option><option>Check</option><option>Not eligible</option></select>
+</div>
+<div class="bar"><span id="count"></span><span><button class="ghost" id="reset">Clear filters</button> <button id="dl">Download CSV</button></span></div>
+<div class="tablewrap"><table>
+<thead><tr>
+<th data-k="name">Company</th><th data-k="state">Location</th><th data-k="kind">Type</th><th data-k="build">Build</th><th data-k="seg">Housing</th><th data-k="code">Code</th><th data-k="active">Status</th><th data-k="eligible">Survey</th>
+</tr></thead><tbody id="tb"></tbody></table></div>
+<footer>
+<b>What this is.</b> A working list of U.S. factories that build residential modular housing, plus candidates still being verified and builders that deploy modular homes. In scope for the manufacturer survey: U.S. factories that build complete volumetric modules for housing and are not HUD-code only.
+<b>Types:</b> Factory = confirmed factory row; Candidate = possible factory still being verified; Builder = builder/developer, not a factory.
+<b>Survey:</b> Eligible meets all scope rules; Check needs one more fact confirmed.
+Contact details, outreach records and notes are kept private and are not published here. Research in progress; figures will change.
+</footer>
+</main>
+<script>
+const D=__DATA__;
+const R=D.rows;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let st={q:"",k:"",b:"",s:"",a:"",e:"",state:"",sort:"state",dir:1,open:null};
+$("#upd").textContent="Updated "+(D.meta.updated||"");
+function opts(sel,key){[...new Set(R.map(r=>r[key]).filter(Boolean))].sort().forEach(v=>{const o=document.createElement("option");o.textContent=v;sel.appendChild(o)})}
+opts($("#fb"),"build");opts($("#fs"),"seg");
+function tiles(){
+  const f=R.filter(r=>r.kind==="Factory"&&r.active!=="Closed");
+  const elig=R.filter(r=>r.eligible==="Eligible"&&r.active!=="Closed");
+  const states=new Set(R.filter(r=>r.kind!=="Builder"&&r.state&&r.active!=="Closed").map(r=>r.state));
+  const t=[[f.length,"Factory rows"],[R.filter(r=>r.kind==="Candidate").length,"Candidates to verify"],[elig.length,"Survey-eligible"],[states.size,"States with factories"],[R.filter(r=>r.kind==="Builder").length,"Builders / deployers"]];
+  $("#tiles").innerHTML=t.map(([n,l])=>`<div class="tile"><b>${n}</b><span>${l}</span></div>`).join("");
+}
+function stateChips(){
+  const c={};R.filter(r=>r.kind!=="Builder"&&r.state&&r.active!=="Closed").forEach(r=>c[r.state]=(c[r.state]||0)+1);
+  const ks=Object.keys(c).sort((a,b)=>c[b]-c[a]||a.localeCompare(b));
+  $("#states").innerHTML=ks.map(k=>`<button data-s="${esc(k)}" class="${st.state===k?"on":""}" title="Factories and candidates in ${esc(k)}">${esc(k)} ${c[k]}</button>`).join("");
+  $("#states").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.state=st.state===b.dataset.s?"":b.dataset.s;render()});
+}
+function filtered(){
+  const q=st.q.toLowerCase();
+  return R.filter(r=>(!st.k||r.kind===st.k)&&(!st.b||r.build===st.b)&&(!st.s||r.seg===st.s)&&(!st.a||r.active===st.a)&&(!st.e||r.eligible===st.e)&&(!st.state||r.state===st.state)
+    &&(!q||[r.name,r.aka,r.city,r.state,r.source,r.street].join(" ").toLowerCase().includes(q)))
+   .sort((a,b)=>String(a[st.sort]||"~").localeCompare(String(b[st.sort]||"~"))*st.dir||a.name.localeCompare(b.name));
+}
+const pill=(v,map)=>v?`<span class="pill ${map[v]||""}">${esc(v)}</span>`:"";
+function render(){
+  stateChips();
+  const rows=filtered();
+  $("#count").textContent=`${rows.length} of ${R.length} records`;
+  $("#tb").innerHTML=rows.map(r=>{
+    const main=`<tr data-id="${r.id}"><td class="name">${esc(r.name)}${r.aka?`<small>${esc(r.aka)}</small>`:""}</td><td>${esc([r.city,r.state].filter(Boolean).join(", "))}</td><td>${esc(r.kind)}</td><td>${esc(r.build)}</td><td>${esc(r.seg)}</td><td>${esc(r.code)}</td><td>${pill(r.active,{Active:"ok",Closed:"no",Unknown:"mid"})}</td><td>${pill(r.eligible,{Eligible:"ok","Not eligible":"no",Check:"mid"})}</td></tr>`;
+    if(st.open!==r.id) return main;
+    const web=r.web?`<a href="${esc(r.web)}" target="_blank" rel="noopener">${esc(r.web)}</a>`:"";
+    return main+`<tr class="detail"><td colspan="8"><dl>
+      <dt>Address</dt><dd>${esc([r.street,r.city,[r.state,r.zip].filter(Boolean).join(" ")].filter(Boolean).join(", "))||"—"}</dd>
+      <dt>Website</dt><dd>${web||"—"}</dd><dt>Data review</dt><dd>${esc(r.review)||"—"}</dd>
+      <dt>Sources</dt><dd>${esc(r.source)||"—"}</dd><dt>Record ID</dt><dd>${esc(r.id)}</dd></dl></td></tr>`;
+  }).join("");
+  $("#tb").querySelectorAll("tr[data-id]").forEach(tr=>tr.onclick=()=>{st.open=st.open===tr.dataset.id?null:tr.dataset.id;render()});
+}
+[["#q","q","input"],["#fk","k","change"],["#fb","b","change"],["#fs","s","change"],["#fa","a","change"],["#fe","e","change"]].forEach(([s,k,ev])=>$(s).addEventListener(ev,e=>{st[k]=e.target.value;render()}));
+document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;st.dir=st.sort===k?-st.dir:1;st.sort=k;render()});
+$("#reset").onclick=()=>{Object.assign(st,{q:"",k:"",b:"",s:"",a:"",e:"",state:""});["#q","#fk","#fb","#fs","#fa","#fe"].forEach(s=>$(s).value="");render()};
+$("#dl").onclick=()=>{
+  const cols=["id","kind","name","aka","street","city","state","zip","web","build","seg","code","active","review","eligible","source"];
+  const csv=[cols.join(",")].concat(filtered().map(r=>cols.map(c=>`"${String(r[c]??"").replace(/"/g,'""')}"`).join(","))).join("\n");
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));a.download="modular_factory_database.csv";a.click();
+};
+tiles();render();
+</script>
+</body>
+</html>
