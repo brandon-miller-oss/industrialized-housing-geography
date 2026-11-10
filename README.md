@@ -34,6 +34,8 @@ Start with [`docs/source_inventory.md`](docs/source_inventory.md), which lists e
 
 Goal: a complete, de-duplicated list of factories producing residential modular products (single-family and multifamily), with contacts, ready for the manufacturer survey.
 
+**Current data:** the team's Excel workbook is exported to `data/processed/factory_db/` (one CSV per tab, contacts removed) and `data/processed/plants_modular.csv` by `scripts/export_factory_db.py`. See [`docs/factory_database.md`](docs/factory_database.md) for files, row IDs, scope rules and how to update the export.
+
 The master table is `data/processed/plants_modular.csv`. Contacts are kept separately in `data/private/contacts.csv`, which is git-ignored, and follow the column template in `data/reference/contacts_template.csv`.
 
 ```bash

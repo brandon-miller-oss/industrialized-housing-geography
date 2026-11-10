@@ -129,6 +129,7 @@ def test_build_db(tmp_path, monkeypatch):
                                      "WFIR_EALT": ["1000"]}), "county", "test").to_csv(proc / "hazards_nri_county.csv", index=False)
     feeds = {k: [p if p.parent != build_db.PROCESSED else proc / p.name for p in v]
              for k, v in build_db.FEEDS.items()}
+    feeds["contacts"] = []   # keep real data/private contacts out of the synthetic test build
     monkeypatch.setattr(build_db, "FEEDS", feeds)
     monkeypatch.setattr(sys, "argv", ["build_db.py", "--out-dir", str(tmp_path / "out")])
     build_db.main()
