@@ -4,6 +4,8 @@ Mapping where modular and manufactured housing is produced and used across the U
 
 University of Denver · Center for Housing Research and Innovative Solutions (CHRIS) · Graduate research project, 2026–27
 
+**Created and maintained by:** Brandon Miller, Graduate Research Associate, CHRIS, University of Denver · Brandon.miller65@du.edu
+
 ## Scope and fit with CHRIS
 
 - **Core region: the Mountain West** (AZ, CO, ID, MT, NV, NM, UT, WY; flagged `mountain_west` in `states`), with Colorado in the greatest depth. National plant and shipment data are kept as context because the region imports most of its manufactured homes.

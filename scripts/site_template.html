@@ -47,6 +47,7 @@ a{color:var(--crimson)}
 .states button{background:var(--chip);color:var(--ink);border:1px solid var(--line);padding:3px 9px;font-size:12px}
 .states button.on{background:var(--crimson);color:#fff;border-color:var(--crimson)}
 footer{color:var(--muted);font-size:12px;margin:18px 0 6px;line-height:1.5}
+header a.maplink{display:inline-block;margin-top:10px;background:#fff;color:var(--crimson);font-weight:600;text-decoration:none;padding:6px 12px;border-radius:6px}
 @media (max-width:600px){h1{font-size:19px}.filters select{flex:1 1 45%}}
 </style>
 </head>
@@ -54,6 +55,7 @@ footer{color:var(--muted);font-size:12px;margin:18px 0 6px;line-height:1.5}
 <header><div class="wrap">
 <h1>Residential Modular Factory Database</h1>
 <p>Geography of Industrialized Housing · Center for Housing Research and Innovative Solutions (CHRIS), University of Denver · <span id="upd"></span></p>
+<a class="maplink" href="map.html">Map of survey-eligible factories →</a>
 </div></header>
 <main>
 <div class="tiles" id="tiles"></div>
@@ -67,7 +69,7 @@ footer{color:var(--muted);font-size:12px;margin:18px 0 6px;line-height:1.5}
 <select id="fe" aria-label="Survey"><option value="">Survey: all</option><option>Eligible</option><option>Check</option><option>Not eligible</option></select>
 </div>
 <div class="bar"><span id="count"></span><span><button class="ghost" id="reset">Clear filters</button> <button id="dl">Download CSV</button></span></div>
-<div class="tablewrap"><table>
+<div class="tablewrap" id="tablewrap"><table>
 <thead><tr>
 <th data-k="name">Company</th><th data-k="state">Location</th><th data-k="kind">Type</th><th data-k="build">Build</th><th data-k="seg">Housing</th><th data-k="code">Code</th><th data-k="active">Status</th><th data-k="eligible">Survey</th>
 </tr></thead><tbody id="tb"></tbody></table></div>
@@ -76,6 +78,7 @@ footer{color:var(--muted);font-size:12px;margin:18px 0 6px;line-height:1.5}
 <b>Types:</b> Factory = confirmed factory row; Candidate = possible factory still being verified; Builder = builder/developer, not a factory.
 <b>Survey:</b> Eligible meets all scope rules; Check needs one more fact confirmed.
 Contact details, outreach records and notes are kept private and are not published here. Research in progress; figures will change.
+<br><b>Created and maintained by</b> Brandon Miller, Graduate Research Associate, Center for Housing Research and Innovative Solutions (CHRIS), University of Denver · <a href="mailto:Brandon.miller65@du.edu">Brandon.miller65@du.edu</a>
 </footer>
 </main>
 <script>
@@ -130,6 +133,7 @@ $("#dl").onclick=()=>{
   const csv=[cols.join(",")].concat(filtered().map(r=>cols.map(c=>`"${String(r[c]??"").replace(/"/g,'""')}"`).join(","))).join("\n");
   const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));a.download="modular_factory_database.csv";a.click();
 };
+
 tiles();render();
 </script>
 </body>

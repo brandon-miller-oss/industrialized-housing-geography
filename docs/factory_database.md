@@ -1,5 +1,7 @@
 # Residential Modular Factory Database
 
+**Created and maintained by:** Brandon Miller, Graduate Research Associate, Center for Housing Research and Innovative Solutions (CHRIS), University of Denver · Brandon.miller65@du.edu
+
 The factory database lists U.S. factories that build residential volumetric modular housing, with the contacts used for the manufacturer survey. The working copy is an Excel workbook kept in the CHRIS shared folder; this repo holds a version-controlled export of it.
 
 ## Files
@@ -35,7 +37,7 @@ A factory is in scope for the survey when it is in the U.S., builds **volumetric
 | Active | YES · NO · UNKNOWN | `status`: active · closed · unknown |
 | Survey_Eligible (formula) | Eligible · Check · Not eligible | `in_survey_frame` = 1 when Eligible |
 
-**Open question for the team:** RV and park-model units (ANSI 119.5 / NFPA 1192), tiny homes on wheels, and unfinished kits, shells or chassis aren't covered by the categories above. Colorado shops such as Trailer Made, Fading West and Wind River build some of each. Confirm with Solomon and Marina whether these count before the survey goes out.
+**Scope decisions (11/10/2026, Solomon Greene):** RV and park-model units (ANSI 119.5 / NFPA 1192), tiny homes on wheels, and unfinished kits, shells or chassis are **out of scope**. Only complete dwelling units built to the state program (IRC modular / state factory-built code) count. Shops that build both, such as Fading West, stay in for their state-code modular production only. **Duplexes count as single-family.**
 
 ## Updating the export
 
@@ -51,12 +53,12 @@ A factory is in scope for the survey when it is in the U.S., builds **volumetric
 
 ## Public web page (GitHub Pages)
 
-`docs/index.html` is a read-only, searchable view of the database, published with GitHub Pages from the `docs/` folder. It contains only the fields in the committed CSVs (no emails, phones, contact names, notes or outreach status). Rebuild it after each export:
+`docs/index.html` is a read-only, searchable view of the database, and `docs/map.html` is a map of the survey-eligible factories with single-family and multifamily layers that turn on and off (blue = SF, red = MF, purple = both). Both pages are published with GitHub Pages from the `docs/` folder and contain only the fields in the committed CSVs (no emails, phones, contact names, notes or outreach status). Rebuild it after each export:
 
 ```bash
 python scripts/export_factory_db.py data/private/ResidentialModular_Factory_Database_<date>.xlsx
 python scripts/build_site.py
-cp output/site/index.html docs/index.html
+cp output/site/index.html output/site/map.html docs/
 ```
 
 Anyone with the Pages link can open the page, and the `docs/` folder's other files are published too, so keep anything private out of `docs/`.
