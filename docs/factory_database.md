@@ -13,6 +13,10 @@ The factory database lists U.S. factories that build residential volumetric modu
 | `data/processed/factory_db/builders_deployers.csv` | Builders and developers that use modular but don't run factories (low priority) | Yes |
 | `data/processed/factory_db/excluded.csv` | Rows removed from scope (non-U.S., commercial-only, closed, duplicates) | Yes |
 | `data/processed/factory_db/state_registry_co.csv` | Colorado DOLA factory-built registry (FB Manufacturers + Multi-Family Factory), pulled 11/08/2026 | Yes |
+| `data/processed/factory_db/state_registry_mt.csv` | Montana DLI approved factory-built manufacturers (9/02/2026), reviewed 11/13/2026 | Yes |
+| `data/processed/factory_db/state_registry_mi.csv` | Michigan LARA approved manufacturers (Rev 09/26), reviewed 11/13/2026 | Yes |
+| `data/processed/factory_db/state_registry_ga.csv` | Georgia DCA industrialized buildings active directory (4/15/2026), with occupancy approvals | Yes |
+| `data/processed/factory_db/state_registry_ut.csv` | Utah DFCM approved modular manufacturers (10/27/2026) | Yes |
 | `data/processed/factory_db/change_log.csv` | Every edit made to the workbook, with old value, new value and reason | Yes |
 | `data/processed/plants_modular.csv` | Master plant table (Manufacturers + Candidates) in the `plants` schema used by `build_db.py` and `export_survey_frame.py` | Yes |
 | `data/private/ResidentialModular_Factory_Database_<date>.xlsx` | The workbook itself | No (has contacts) |

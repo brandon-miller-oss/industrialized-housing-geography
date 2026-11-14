@@ -34,6 +34,10 @@ TABS = {
     "Builders_Deployers": (4, "B", "builders_deployers.csv"),
     "Excluded": (1, "X", "excluded.csv"),
     "StateRegistry_CO": (1, "R", "state_registry_co.csv"),
+    "StateRegistry_MT": (1, "RMT", "state_registry_mt.csv"),
+    "StateRegistry_MI": (1, "RMI", "state_registry_mi.csv"),
+    "StateRegistry_GA": (1, "RGA", "state_registry_ga.csv"),
+    "StateRegistry_UT": (1, "RUT", "state_registry_ut.csv"),
     "Change_Log": (None, "L", "change_log.csv"),
 }
 # Columns that hold personal contact details; they go to data/private only.
