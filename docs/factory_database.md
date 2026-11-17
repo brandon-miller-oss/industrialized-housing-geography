@@ -17,6 +17,10 @@ The factory database lists U.S. factories that build residential volumetric modu
 | `data/processed/factory_db/state_registry_mi.csv` | Michigan LARA approved manufacturers (Rev 09/26), reviewed 11/13/2026 | Yes |
 | `data/processed/factory_db/state_registry_ga.csv` | Georgia DCA industrialized buildings active directory (4/15/2026), with occupancy approvals | Yes |
 | `data/processed/factory_db/state_registry_ut.csv` | Utah DFCM approved modular manufacturers (10/27/2026) | Yes |
+| `data/processed/factory_db/state_registry_nj.csv` | New Jersey DCA approved manufacturer list (received 11/16/2026) | Yes |
+| `data/processed/factory_db/state_registry_pa.csv` | Pennsylvania DCED approved manufacturer list with approval type (received 11/16/2026) | Yes |
+| `data/processed/factory_db/state_registry_me.csv` | Maine Manufactured Housing Board active manufacturer licenses (received 11/16/2026) | Yes |
+| `data/processed/factory_db/state_registry_wi.csv` | Wisconsin DSPS manufactured home manufacturer credentials (7/15/2026) | Yes |
 | `data/processed/factory_db/change_log.csv` | Every edit made to the workbook, with old value, new value and reason | Yes |
 | `data/processed/plants_modular.csv` | Master plant table (Manufacturers + Candidates) in the `plants` schema used by `build_db.py` and `export_survey_frame.py` | Yes |
 | `data/private/ResidentialModular_Factory_Database_<date>.xlsx` | The workbook itself | No (has contacts) |

@@ -1,0 +1,273 @@
+row_id,Registry list,Name as listed,Address as listed,City,State,Phone,Approved for / license,Lincoln note,Lincoln duplicate flag,Database match,Action taken
+RNJ2,NJ DCA list,A & A SHEET METAL PRODUCTS,5122 N. STATE RD. 39,LA PORTE,IN,,,industrial/commercial only; likely_excluded: industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ3,NJ DCA list,A-1 MOBILE STORAGE SERVICE,1001 COMMERCE CT.,MANCHESTER,IA,,,"possible_exclusion: storage/restroom/detention structures - commercial, not residential",no_match,Excluded row 4,Already on Excluded (not residential / not in scope)
+RNJ4,NJ DCA list,"A1 SHEET METAL, INC.",9410 E. 54TH ST.,TULSA,OK,,,possible_exclusion: sheet metal/fabrication shop - not a housing manufacturer,no_match,,Not added: sheet metal/fabrication shop - not a housing manufacturer (Lincoln flag)
+RNJ5,NJ DCA list,ACOUSTICAL SHEETMETAL CO.,2009 HUDOME WAY,VIRGINIA BEACH,VA,,,industrial/commercial only; likely_excluded: industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ6,NJ DCA list,"ADVANCED VOLUMETRIC ALLIANCE, LLC",6757 KARMEN AVE. NE,ALBERTVILLE,MN,,,,match (Advanced Volumetric Alliance),Manufacturers row 5,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ7,NJ DCA list,ADVENTURE HOMES,1119 FULLER DR.,GARRETT,IN,,,,match (Adventure Homes),Manufacturers row 6,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ8,NJ DCA list,AFFINITY BLDG. SYS.,62 MURRAY BLVD.,LAKELAND,GA,,,,match (Affinity Modular),Manufacturers row 7,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ9,NJ DCA list,AGM STRUCTURES,21240 PROTECTA DR.,ELKHART,IN,,,commercial only; likely_excluded: commercial only,no_match,Candidates_to_Verify row 99,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ10,NJ DCA list,AIS ENCLOSURE SYS. – CHATTANOOGA LLC,1919 W. POLYMER DR.,CHATTANOOGA,TN,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ11,NJ DCA list,AMERICAN PRODUCTS,597 EVERGREEN RD.,STRAFFORD,MO,,,"enclosures, e.g. data centers; likely_excluded: enclosures, e.g. data centers",no_match,,"Not added: enclosures, e.g. data centers"
+RNJ12,NJ DCA list,AMR-PEMCO,1960 VALLEY DALE ST.,BLUEFIELD,VA,,,industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ13,NJ DCA list,AMTEX CORP.,832 E. WALNUT ST.,GARLAND,TX,,,,match (Sunbelt Modular / Amtex Corp),Manufacturers row 140,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ14,NJ DCA list,APEX HOMES OF PA,7172 ROUTE 522,MIDDLEBURG,PA,,,,"match (Apex Homes of PA, LLC.)",Manufacturers row 9,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ15,NJ DCA list,APOLLO MODULAR SYSTEMS,2162 INDUSTRIAL BLVD.,DOUGLAS,GA,,,"website down, looks out of business",no_match,Candidates_to_Verify row 165,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ16,NJ DCA list,ART’S WAY SCIENTIFIC,203 OAK ST.,MONONA,IA,,,commercial only,no_match,Excluded row 7,Already on Excluded (not residential / not in scope)
+RNJ17,NJ DCA list,ASTEC IND. INC. – JEROME,4101 JEROME AVE.,CHATTANOOGA,TN,,,industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ18,NJ DCA list,ATKINSON IND.,1801 E. 27TH ST. TERRACE,PITTSBURG,KS,,,looks like it's out of business,no_match,,Not added: looks like it's out of business
+RNJ19,NJ DCA list,AUSTIN MOHAWK AND CO.,2175 BEECHGROVE PL.,UTICA,NY,,,commercial only,no_match,,Not added: commercial only
+RNJ20,NJ DCA list,"AVL MFG., INC.","394 SHERMAN AVE. N., UNIT 9",HAMILTON,ON,,,industrial/commercial only,no_match,,Not added: Canadian industrial plant
+RNJ21,NJ DCA list,"B.I.G. ENTERPRISES, INC.",9702 E. RUSH ST.,SOUTH EL MONTE,CA,,,commercial only,no_match,,Not added: commercial only
+RNJ22,NJ DCA list,BAILEY HOMES LTD.,2673 SASKATCHEWAN AVE. W.,PORTAGE LA PRAI,MB,,,"Canada, no US facilities",no_match,,Not added: Canadian plant (not U.S.)
+RNJ23,NJ DCA list,BENSONWOOD MFG. FAC.,25 PRODUCTION AVE.,KEENE,NH,,,,no_match,Manufacturers row 16,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ24,NJ DCA list,"BERACAH HOMES, INC.",9590 NANTICOKE BUSINESS PARK DR.,GREENWOOD,DE,,,,no_match,Manufacturers row 174,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ25,NJ DCA list,BFS OPS (PLEASANT VALLEY HMS),100 HAMMERSMITH DR.,PINE GROVE,PA,,,,"match (Pleasant Valley Homes, Inc.)",Manufacturers row 117,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ26,NJ DCA list,BLACKHAWK EQUIPMENT CORP.,4350 RACE ST.,DENVER,CO,,,likely_excluded: Transport/storage/utility trailers,no_match,,Not added: Transport/storage/utility trailers (Lincoln flag)
+RNJ27,NJ DCA list,"BLAZER IND., INC.","945 OLNEY ST., SE",AUMSVILLE,OR,,,,no_match,Manufacturers row 175,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ28,NJ DCA list,"BLOX, LLC","2625 5TH AVE. NORTH, BLDG. C",BESSEMER,AL,,,likely_excluded: Commercial only,no_match,Excluded row 11,Already on Excluded (not residential / not in scope)
+RNJ29,NJ DCA list,"BLUE RIDGE LOG CABINS, LLC",625 E. FRONTAGE RD.,CAMPOBELLO,SC,,,,match (Blue Ridge Log Cabins),Manufacturers row 17,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ30,NJ DCA list,BLUVERA TEXAS,13020 FM 1641,FORTNEY,TX,,,,no_match,Manufacturers row 176,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ31,NJ DCA list,BOLDT OSHKOSH FABRICATION FACILITY,43 E. 10TH AVE.,OSHKOSH,WI,,,possible_exclusion: sheet metal/fabrication shop - not a housing manufacturer,no_match,,Not added: sheet metal/fabrication shop - not a housing manufacturer (Lincoln flag)
+RNJ32,NJ DCA list,"BOXPOP (BRITTEN, INC.)",2294 CASS RD.,TRAVERSE CITY,MI,,,commercial only,no_match,,Not added: commercial only
+RNJ33,NJ DCA list,BUCKHORN BUILDERS LLC,3976 STATE ROUTE 39,MILLERSBURG,OH,,,,match (Buckhorn Builders),Manufacturers row 21,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ34,NJ DCA list,"C&B CUSTOM MOD., INC.",2224 BLOOMINGDALE DR.,BRISTOL,IN,,,,match (Sunbelt Modular / C & B Custom Modular),Manufacturers row 142,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ35,NJ DCA list,CAVCO-CLARION,20898 PAINT BLVD.,SHIPPENVILLE,PA,,,,match (Cavco Industries / Cavco - Clarion),Manufacturers row 23,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ36,NJ DCA list,CAVCO-DORCHESTER,337 LIBERTY ST.,DORCHESTER,WI,,,,match (Cavco Industries / Cavco - Dorchester),Manufacturers row 25,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ37,NJ DCA list,CAVCO-EMLENTON,4 PENNWEST WAY,EMLENTON,PA,,,,match (Cavco Industries / Cavco - Manorwood),Manufacturers row 29,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ38,NJ DCA list,CAVCO-GOSHEN,1902 CENTURY DR.,GOSHEN,IN,,,,match (Cavco Industries / Cavco - Goshen),Manufacturers row 28,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ39,NJ DCA list,CAVCO-MONTEVIDEO,815 BUDD RD.,MONTEVIDEO,MN,,,,match (Cavco Industries / Cavco - Montevideo),Manufacturers row 32,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ40,NJ DCA list,CAVCO-SHIPPENVILLE,20510 PAINT BLVD.,SHIPPENVILLE,PA,,,,match (Cavco Industries / Cavco - Shippenville),Manufacturers row 35,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ41,NJ DCA list,"CC915, INC. WAREHOUSE",1575 E. SAN ANTONIO AVE.,EL PASO,TX,,,,no_match,Manufacturers row 177,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ42,NJ DCA list,"CCSI INTERNATIONAL, INC.",8642 US HIGHWAY 20,GARDEN PRAIRIE,IL,,,"pool enclosures, roof systems",no_match,,"Not added: pool enclosures, roof systems"
+RNJ43,NJ DCA list,"CELLXION, LLC (DIV. OF SABRE IND.)",5031 HAZEL JONES RD.,BOSSIER CITY,LA,,,industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ44,NJ DCA list,CHAMPION (#290-HIGHLAND MFG),1660 ROWE AVE.,WORTHINGTON,MN,,,,no_match,Candidates_to_Verify row 19,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ45,NJ DCA list,CHAMPION (#5-ATLANTIC HMS),3200 ENTERPRISE AVE.,YORK,NE,,,,no_match,Manufacturers row 46,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ46,NJ DCA list,CHAMPION HOME BLDRS. (#112),308 SHERIDAN DR.,TOPEKA,IN,,,,"match (Champion Home Builders, Inc. / Champion Home Builders)",Manufacturers row 37,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ47,NJ DCA list,CHAMPION MOD. DIV. 270,451 SOUTHERN AVE.,STRATTANVILLE,PA,,,,"match (Champion Home Builders, Inc. / Champion Home Builders, #270)",Manufacturers row 40,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ48,NJ DCA list,"CHAMPION MOD., INC. (#41)",10642 S. SUSQUEHANNA TRAIL,LIVERPOOL,PA,,,,"match (Champion Home Builders, Inc. / Champion Modular, Inc. #41)",Manufacturers row 43,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ49,NJ DCA list,CHIEF IND. (BONNAVILLA HOMES),111 GRANT ST.,AURORA,NE,,,,match (BONNAVILLA/Chief Industries),Manufacturers row 18,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ50,NJ DCA list,"CHILLICOTHE METAL CO., INC.",4507 EAST ROME RD.,CHILLICOTHE,IL,,,commercial only,no_match,,Not added: commercial only
+RNJ51,NJ DCA list,"CID ASSOC., INC.",730 EKASTOWN RD.,SARVER,PA,,,aka CID Buildings - commercial only,no_match,,Not added: aka CID Buildings - commercial only
+RNJ52,NJ DCA list,CMH MFG. WEST DBA CLAYTON MIDDLEBURY,437 N. MAIN ST.,MIDDLEBURY,IN,,,,match (Clayton Homes / Clayton Middlebury),Manufacturers row 50,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ53,NJ DCA list,"COASTAL DETENTION HOLDINGS, LLC",555 LINCOLN AVE. NW,HURON,SD,,,"possible_exclusion: storage/restroom/detention structures - commercial, not residential",no_match,,"Not added: storage/restroom/detention structures - commercial, not residential (Lincoln flag)"
+RNJ54,NJ DCA list,COLOBUILDING MEDFORD,8100 NW 21ST. AVE.,MEDFORD,MN,,,industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ55,NJ DCA list,"CONCEPT UNLIMITED, INC.",10020 FARROW RD.,COLUMBIA,SC,,,likely_excluded: commercial only,no_match,Candidates_to_Verify row 139,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ56,NJ DCA list,CONTECH CONTROL SERVICES,2700 SENS RD.,LAPORTE,TX,,,possible_exclusion: industrial controls - not housing,no_match,,Not added: industrial controls - not housing (Lincoln flag)
+RNJ57,NJ DCA list,COZY CABINS LLC,455 E. FARMERSVILLE RD.,NEW HOLLAND,PA,,,,match (Cozy Cabins),Manufacturers row 60,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ58,NJ DCA list,CREATIVE MOD. CONST. (123),1012 N. FARM RD. 123,SPRINGFIELD,MO,,,likely_excluded: commercial only,no_match,Candidates_to_Verify row 100,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ59,NJ DCA list,CREATIVE MOD. CONST. (CHERRY),3228 E. CHERRY ST.,SPRINGFIELD,MO,,,commercial only,no_match,Candidates_to_Verify row 100,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ60,NJ DCA list,CREATIVE MOD. CONST. (KEARNEY),2738 E. KEARNEY ST.,SPRINGFIELD,MO,,,commercial only,no_match,Candidates_to_Verify row 100,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ61,NJ DCA list,CREATIVE MOD. CONST. (PRINCE),529 N. PRINCE LN .,SPRINGFIELD,MO,,,commercial only,no_match,Candidates_to_Verify row 100,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ62,NJ DCA list,"CUPERTINO ELECTRIC, INC.",1220 WEST FULTON ST.,EDGERTON,WI,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ63,NJ DCA list,"CUSTOM POWER ENC., LLC",6100 ROMONA BLVD.,HOUSTON,TX,,,industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ64,NJ DCA list,"CUSTOM TOUCH HOMES, INC.",411 SOUTH EAST 12TH ST.,MADISON,SD,,,,no_match,Manufacturers row 178,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ65,NJ DCA list,CXT INC.,6701 E. FLAMINGO AVE. BLDG. 300,NAMPA,ID,,,industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ66,NJ DCA list,CXT INC.,901 N. HWY 77,HILLSBORO,TX,,,industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ67,NJ DCA list,CXT – WAVERLY,362 WAVERLY RD.,WILLIAMSTOWN,WV,,,industrial/commercial only,no_match,,Not added: industrial/commercial only
+RNJ68,NJ DCA list,DAKOTA CUSTOM HOMES,1314 STERLING DR.,WASHBURN,ND,,,,no_match,Manufacturers row 179,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ69,NJ DCA list,"DAKOTA PUMP, LLC",25524 413TH AVE.,MITCHELL,SD,,,possible_exclusion: industrial equipment (compressors/pumps) - not housing,no_match,,Not added: industrial equipment (compressors/pumps) - not housing (Lincoln flag)
+RNJ70,NJ DCA list,DANT CLAYTON CORP.,1163 ALGONQUIN PKWY.,LOUISVILLE,KY,,,likely_excluded: stadiums,no_match,,Not added: stadiums (Lincoln flag)
+RNJ71,NJ DCA list,DEER RUN CABINS,1340 ROLLING ACRES,CAMPBELLSVILLE,KY,,,,match (Deer Run Cabins),Manufacturers row 62,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ72,NJ DCA list,"DESIGN HOMES, INC.",600 N. MARQUETTE RD.,PRAIRIE DU CHIE,WI,,,,no_match,,Added to Candidates_to_Verify row 177
+RNJ73,NJ DCA list,"DIAMOND BLDRS, INC.",440 THOMPSON DR.,DOUGLAS,GA,,,likely_excluded: commercial only,no_match,Candidates_to_Verify row 127,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ74,NJ DCA list,"DUPONT BLDG., INC.",100 RITA DR.,BELL CITY,LA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ75,NJ DCA list,"DURAPODS, LLC",180 NEW BRITAIN BLVD.,CHALFONT,PA,,,likely_excluded: POD bathrooms,no_match,,Not added: POD bathrooms (Lincoln flag)
+RNJ76,NJ DCA list,"DYNAMIC HOMES, LLC",525 ROOSEVELT AVE.,DETROIT LAKES,MN,,,,no_match,,Added to Candidates_to_Verify row 178
+RNJ77,NJ DCA list,EAGLE RIVER HOMES LLC,21 S. GROFFDALE RD.,LEOLA,PA,,,,match (Eagle River Homes),Manufacturers row 64,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ78,NJ DCA list,EATON CORP. – OMAHA POWER CTR.,3900 DAHLMAN AVE.,OMAHA,NE,,,likely_excluded: enclosures and stuff for power stations,no_match,,Not added: enclosures and stuff for power stations (Lincoln flag)
+RNJ79,NJ DCA list,"EK MACHINE CO., INC., PLANT 2",465 EK WAY,FALL RIVER,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ80,NJ DCA list,"EK MACHINE CO., INC., PLANT 3",500 QUALITY CT.,FALL RIVER,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ81,NJ DCA list,ENERPAN BLDG. SYS.,3908 CANE RUN RD.,LOUISVILLE,KY,,,,no_match,Excluded row 21,Already on Excluded (not residential / not in scope)
+RNJ82,NJ DCA list,"ENGINEERED FLUID, INC.",1308 N. MAPLE ST.,CENTRALIA,IL,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ83,NJ DCA list,"ENVIRONMENTAL AIR SYSTEMS, LLC (HQ)",250 SWATHMORE AVE.,HIGH POINT,NC,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ84,NJ DCA list,"ENVIRONMENTAL AIR SYSTEMS, LLC (MCWAY)",623 MCWAY DR.,HIGH POINT,NC,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ85,NJ DCA list,ESS METRON,1505 W. THIRD AVE.,DENVER,CO,,,likely_excluded: power stations,no_match,,Not added: power stations (Lincoln flag)
+RNJ86,NJ DCA list,"EXCELLERATE, LITTLE CHUTE",2125 W. EVERGREEN DR.,APPLETON,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ87,NJ DCA list,"EXCELLERATE, OLATHE EAST",21800 WEST167TH STREET,OLATHE,KS,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ88,NJ DCA list,"FALCON CONTROL SYS., LLC","3901 AIRLINE DR., BLDG. D",HOUSTON,TX,,,possible_exclusion: industrial controls - not housing,no_match,,Not added: industrial controls - not housing (Lincoln flag)
+RNJ89,NJ DCA list,FALCON STRUCTURES,7717 GILBERT RD.,MANOR,TX,,,,no_match,Excluded row 23,Already on Excluded (not residential / not in scope)
+RNJ90,NJ DCA list,FAMILY BUILT HOMES,982 RUNDELL RD.,GERING,NE,,,,no_match,Candidates_to_Verify row 103,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ91,NJ DCA list,FIBREBOND CORP.,1300 DAVENPORT DR.,MINDEN,LA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ92,NJ DCA list,FIELD WORKS LLC,585 HILLSIDE AVE. SE,PINE CITY,MN,,,,no_match,,Added to Candidates_to_Verify row 179
+RNJ93,NJ DCA list,FIRST STRING SPACE,892 RAILROAD AVE. E.,PEARSON,GA,,,likely_excluded: commercial only,no_match,Candidates_to_Verify row 161,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ94,NJ DCA list,FIRST STRING SPACE (PLANT 2),1034 ALBANY AVE. W,PEARSON,GA,,,likely_excluded: commercial only,no_match,Candidates_to_Verify row 161,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ95,NJ DCA list,"FOUR SQUARE MODULAR 1, LLC","25786 MINER RD., LOT 1",ELKHART,IN,,,,no_match,Candidates_to_Verify row 98,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ96,NJ DCA list,"FREY-MOSS STR., INC.",1801 ROCKDALE INDUSTRIAL BLVD. NW,CONYERS,GA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ97,NJ DCA list,FULLERTON BLDG. SYS.,34620 250TH ST.,WORTHINGTON,MN,,,,no_match,,Added to Candidates_to_Verify row 180
+RNJ98,NJ DCA list,"G-CON MFG., INC.",6161 IMPERIAL LOOP,COLLEGE STATION,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ99,NJ DCA list,GAS CHROMATOGRAPHY SYS. MAXUM LLC,"5980 WEST SAM HOUSTON N., STE, 500",HOUSTON,TX,,,possible_exclusion: pharmaceutical/lab equipment - not housing,no_match,,Not added: pharmaceutical/lab equipment - not housing (Lincoln flag)
+RNJ100,NJ DCA list,GLOBAL POWER COMPONENTS – BAY 8,"6600 W. WASHINGTON ST., BAY 8",WEST ALLIS,WI,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ101,NJ DCA list,GLOBAL POWER COMPONENTS – CHASE,3073 S. CHASE AVE.,MILWAUKEE,WI,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ102,NJ DCA list,GLOBAL POWER COMPONENTS – MAIN,2300 S. 51ST ST.,MILWAUKEE,WI,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ103,NJ DCA list,GUARDIAN PREFAB – MX,NEPTUNO 1919 COLONIA SATELITE,JUAREZ,CH,,,,no_match,,Not added: Mexico plant (not U.S.); Guardian Prefab PA plant is Manufacturers row 70
+RNJ104,NJ DCA list,GUARDIAN PREFAB – PA,13338 MIDVALE RD.,WAYNESBORO,PA,,,,no_match,Manufacturers row 70,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ105,NJ DCA list,"GUERDON, LLC",5556 S. FEDERAL WAY,BOISE,ID,,,,"match (Guerdon, LLC)",Manufacturers row 71,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ106,NJ DCA list,"HARDIN INDUSTRIES, LLC",400 N. COMMERCIAL ST.,LACON,IL,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ107,NJ DCA list,HARVARD INTEGRATIONS,27157 470TH AVE.,TEA,SD,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ108,NJ DCA list,HENNIG ENCLOSURE SYS.,9904 N. ALPINE RD.,MACHESNEY PARK,IL,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ109,NJ DCA list,"HERITAGE HOMES OF NEBRASKA, INC.",1320 EAST 7TH ST.,WAYNE,NE,,,,no_match,Candidates_to_Verify row 75,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ110,NJ DCA list,HERITAGE IND.,905 CENTENNIAL ROAD,WAYNE,NE,,,,no_match,Candidates_to_Verify row 75,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ111,NJ DCA list,"HOMARK CO., INC.",100 THIRD STREET SW,RED LAKE FALLS,MN,,,,no_match,,Added to Candidates_to_Verify row 181
+RNJ112,NJ DCA list,"HOMEWAY HOMES, INC.",100 HOMEWAY COURT,DEER CREEK,IL,,,,no_match,Candidates_to_Verify row 159,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ113,NJ DCA list,"HUB MACHINE AND TOOL, INC.",900 US HWY 380 BYPASS,GRAHAM,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ114,NJ DCA list,"HUFFCUTT CONCRETE, INC.",4154 123RD ST.,CHIPPEWA FALLS,WI,,,possible_exclusion: concrete/precast products - not modular housing,no_match,,Not added: concrete/precast products - not modular housing (Lincoln flag)
+RNJ115,NJ DCA list,HUNTER 001,14935 JACINTO PORT BLVD.,HOUSTON,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ116,NJ DCA list,ICE HOUSE AMERICA MFG. PLANT,278 US HWY 319 S.,MOULTRIE,GA,,,likely_excluded: not residential; out of business,no_match,,Not added: not residential; out of business (Lincoln flag)
+RNJ117,NJ DCA list,"ICON LEGACY CUSTOM MOD. HOMES, LLC",246 SAND HILL ROAD,SELINSGROVE,PA,,,,match (Icon Legacy Custom Modular Homes LLC),Manufacturers row 77,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ118,NJ DCA list,IKONIQ (AIRLINE),27 AIRLINE RD.,ROCHESTER,NY,,,likely_excluded: commercial only,no_match,,Not added: commercial only (Lincoln flag)
+RNJ119,NJ DCA list,"INDICOM BLDGS., INC.",721 N. BURLESON BLVD.,BURLESON,TX,,,,match (Sunbelt Modular / Indicom Buildings),Manufacturers row 143,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ120,NJ DCA list,"INTERMOUNTAIN ELEC., INC. (CENTRALIA)",400 SWAN AVE.,CENTRALIA,IL,,,likely_excluded: industrial,no_match,,Not added: industrial (Lincoln flag)
+RNJ121,NJ DCA list,"INTERSTATES, INC.",1409 DUFF DR.,FORT COLLINS,CO,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ122,NJ DCA list,"INTERSTATES, INC.","452 14TH ST., NE",SIOUX CENTER,IA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ123,NJ DCA list,INTL. COLD STORAGE (CMP),215 EAST 13TH ST.,ANDOVER,KS,,,"possible_exclusion: storage/restroom/detention structures - commercial, not residential",no_match,,"Not added: storage/restroom/detention structures - commercial, not residential (Lincoln flag)"
+RNJ124,NJ DCA list,INTL. COLD STORAGE (EMP),5678 HEARDS MOUNTAIN ROAD,COVESVILLE,VA,,,"possible_exclusion: storage/restroom/detention structures - commercial, not residential",no_match,,"Not added: storage/restroom/detention structures - commercial, not residential (Lincoln flag)"
+RNJ125,NJ DCA list,JOAQUIN MFG. CORP.,6900 ELM ST.,COMMERCE CITY,CO,,,likely_excluded: commercial only,no_match,Candidates_to_Verify row 108,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ126,NJ DCA list,"KBS BLDR., INC.",300 PARK ST.,SOUTH PARIS,ME,,,,match (KBS Builders Inc.),Manufacturers row 83,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ127,NJ DCA list,"KEYSTONE STR., INC.",705 TERMINAL WAY,KENNETT SQUARE,PA,,,,no_match,Candidates_to_Verify row 125,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ128,NJ DCA list,KITCHENS TO GO BY MOBILE MODULAR,9876 W. OLD RD. 30,ETNA GREEN,IN,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ129,NJ DCA list,KM CONST.,475 MENAREY AVE.,CARTWRIGHT,MB,,,,no_match,,Not added: Canadian plant (not U.S.)
+RNJ130,NJ DCA list,"KOZY LOG CABINS, LLC",330 COUNTY RD 181,DECATUR,TN,,,,no_match,Candidates_to_Verify row 153,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ131,NJ DCA list,KPS GLOBAL LLC,521 INDUSTRIAL PARK RD.,PINEY FLATS,TN,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ132,NJ DCA list,"KPS GLOBAL, LLC",4201 N. BEACH ST.,FORT WORTH,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ133,NJ DCA list,KW CUSTOM CONTROLS,4755 AMERITECH DR.,SOUTH BEND,IN,,,possible_exclusion: industrial controls - not housing,no_match,,Not added: industrial controls - not housing (Lincoln flag)
+RNJ134,NJ DCA list,"LAB-PRO, INC.",845 NORTH MAIN ST.,MIAMISBURG,OH,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ135,NJ DCA list,"LAYCO ELECTRIC INNOVATIONS, 1830",1830 N. 75TH EAST AVE.,TULSA,OK,,,likely_excluded: commercial only,no_match,,Not added: commercial only (Lincoln flag)
+RNJ136,NJ DCA list,"LITTLE BLDG., INC.",161 SHAFER DR.,ROMEO,MI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ137,NJ DCA list,LONESTAR SHELTER MFG.,141 SEABORN RD.,PONDER,TX,,,likely_excluded: equipment sheltering,no_match,,Not added: equipment sheltering (Lincoln flag)
+RNJ138,NJ DCA list,"M&M COASTAL MFG., INC.",8700 HIRSCH RD.,HOUSTON,TX,,,likely_excluded: not residential; commercial/industrial only,no_match,,Not added: not residential; commercial/industrial only (Lincoln flag)
+RNJ139,NJ DCA list,M&W PRECAST,210 DURHAM RD.,OTTSVILLE,PA,,,possible_exclusion: concrete/precast products - not modular housing,no_match,,Not added: concrete/precast products - not modular housing (Lincoln flag)
+RNJ140,NJ DCA list,"MAC PRODUCTS, INC.",60 PENNSYLVANIA AVE.,KEARNY,NJ,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ141,NJ DCA list,MADISON IND. INC. OF GA,"1035 IRIS DR., SE",CONYERS,GA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ142,NJ DCA list,"MARDAN FABRICATION, INC.",40961 PRODUCTION DR.,HARRISON TWP,MI,,,possible_exclusion: sheet metal/fabrication shop - not a housing manufacturer,no_match,,Not added: sheet metal/fabrication shop - not a housing manufacturer (Lincoln flag)
+RNJ143,NJ DCA list,"MAX MFG., INC.",2763 LANDFILL RD.,PELHAM,GA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ144,NJ DCA list,MBSP (PLANT 1),72 EAST MARKET ST.,MIDDLEBURG,PA,,,,match (Professional Building Systems / Modular Building Systems of PA Plant #1),Manufacturers row 97,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ145,NJ DCA list,MBSP (PLANT 2),200 CUSTOM AVE.,MIDDLEBURG,PA,,,,match (Modular Building Systems of PA / Custom Building Systems),Manufacturers row 97,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ146,NJ DCA list,"MFD. HOUSING ENTERPRISES, INC.",9302 US HWY 6,BRYAN,OH,,,,match (Manufactured Housing Enterprises),Manufacturers row 91,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ147,NJ DCA list,"MIRROR HOUSES USA, INC.",12321 CUTTEN RD.,HOUSTON,TX,,,,no_match,Candidates_to_Verify row 89,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ148,NJ DCA list,"MOBILE FAC. ENG., INC.",306 W. STATE ST.,CASSOPOLIS,MI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ149,NJ DCA list,"MOD. CONNECTIONS, LLC",1090 INDUSTRIAL BLVD.,BESSEMER,AL,,,,no_match,Candidates_to_Verify row 130,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ150,NJ DCA list,"MOD. RESOURCES, INC.",878 N. MAIN ST.,LORETTO,TN,,,,no_match,Candidates_to_Verify row 141,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ151,NJ DCA list,"MOD. STEEL SYS., INC.",11 EDWARDS DR.,BLOOMSBURG,PA,,,,match (Modular Steel Systems),Manufacturers row 99,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ152,NJ DCA list,MODERN COUNTRY HOMES,1803 MOUNTAIN RD.,NEWBURG,PA,,,,match (Esh Construction dba Modern Country Homes),Manufacturers row 65,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ153,NJ DCA list,MODERN LIVING SOLUTIONS – KNOX LLC,92 MODERN LIVING SOLUTIONS WAY,KNOX,PA,,,,match (Modern Living Solutions),Manufacturers row 94,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ154,NJ DCA list,"MODLOGIQ, INC.",191 QUALITY CIRCLE,NEW HOLLAND,PA,,,,match (MODLOGIQ / NRB Inc & NRB USA),Manufacturers row 95,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ155,NJ DCA list,MODULAR DEVICES,1515 BROOKVILLE CROSSING WAY,INDIANAPOLIS,IN,,,likely_excluded: commercial only,no_match,,Not added: commercial only (Lincoln flag)
+RNJ156,NJ DCA list,MODULE X SOLUTIONS LLC,601 BENTON KELLY DR.,SHREVEPORT,LA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ157,NJ DCA list,MORTENSON INNOVATION LAB,460 HOOVER ST. NE,MINNEAPOLIS,MN,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ158,NJ DCA list,MUNCY HOMES PLANT 3,1567 ROUTE 442 HWY,MUNCY,PA,,,,"match (Muncy Homes, Inc. / Plant 3, Premier Builders, Div. Muncy Homes, Inc.)",Manufacturers row 106,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ159,NJ DCA list,NATIONAL MOD. MFG. LLC (HAVEN),8905 E. INDUSTRIAL DR.,HAVEN,KS,,,,no_match,Excluded row 39,Already on Excluded (not residential / not in scope)
+RNJ160,NJ DCA list,NATIONAL MOD. MFG. LLC (PROVIDENCE),2508 WALTERS MILL RD.,PROVIDENCE,NC,,,,no_match,Excluded row 39,Already on Excluded (not residential / not in scope)
+RNJ161,NJ DCA list,"NEW ENERGY WORKS OF ROCHESTER, INC.",1180 COMMERCIAL DR.,FARMINGTON,NY,,,likely_excluded: not modular,no_match,,Not added: not modular (Lincoln flag)
+RNJ162,NJ DCA list,NORTHSTAR SYSTEMBUILT,203 INDUSTRIAL DR.,REDWOOD FALLS,MN,,,,no_match,Candidates_to_Verify row 21,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ163,NJ DCA list,NORTHSTAR SYSTEMBUILT,715 21ST ST. SW,WATERTOWN,SD,,,,no_match,Candidates_to_Verify row 90,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ164,NJ DCA list,NVENT ENCLOSURE SYS,3011 MILLINGTON RD.,MILLINGTON,MD,,,likely_excluded: industrial/commercial only,no_match,,Not added: industrial/commercial only (Lincoln flag)
+RNJ165,NJ DCA list,PANELMATIC BRK,6882 PARKWAY DR.,BROOKFIELD,OH,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ166,NJ DCA list,PANELMATIC CNR,3212 OLD HWY 105E,CONROE,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ167,NJ DCA list,PANELMATIC HOU,410 WEST ROAD,HOUSTON,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ168,NJ DCA list,"PAR-KUT INTL., INC.",40961 PRODUCTION DR.,HARRISON TWP,MI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ169,NJ DCA list,PARKLINE DELANEY RD.,5235 DELANEY RD.,HITCHCOCK,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ170,NJ DCA list,"PARKLINE, INC.",328 ELEANOR INDUSTRIAL PARK DR.,ELEANOR,WV,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ171,NJ DCA list,PBI 129 PRE-ASSEMBLED WELDED DIV.,193 S. MAUNEY RD.,BLAIRSVILLE,GA,,,,no_match,Excluded row 44,Already on Excluded (not residential / not in scope)
+RNJ172,NJ DCA list,PBR PRE-ASSEMBLED PANELIZED DIV.,1506 BALLEWTOWN RD.,BLUE RIDGE,GA,,,,no_match,Excluded row 44,Already on Excluded (not residential / not in scope)
+RNJ173,NJ DCA list,"PDC FACILITIES, INC.",700 WALNUT RIDGE DR.,HARTLAND,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ174,NJ DCA list,PDM CONSTRUCTORS,425 STUMP RD.,NORTH WALES,PA,,,"possible_exclusion: general contractor/construction company, not a manufacturer",no_match,,"Not added: general contractor/construction company, not a manufacturer (Lincoln flag)"
+RNJ175,NJ DCA list,PENNER BLDRS.,SW 19-1-14W,CARTWRIGHT,MB,,,,no_match,,Not added: Canadian plant (not U.S.)
+RNJ176,NJ DCA list,PHOENIX MOD. ELEVATOR,4800 PHOENIX DR.,MT. VERNON,IL,,,likely_excluded: commercial only,no_match,,Not added: commercial only (Lincoln flag)
+RNJ177,NJ DCA list,PINKE HOMES NORTHWOOD,550 34TH ST. NE,NORTHWOOD,ND,,,,no_match,,Added to Candidates_to_Verify row 182
+RNJ178,NJ DCA list,PINKE HOMES WISHEK,403 BEAVER AVE.,WISHEK,ND,,,,no_match,Candidates_to_Verify row 118,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ179,NJ DCA list,PIONEER HOMES,"UNIT #2, 49 – 4TH AVE. NE",ALTONA,MB,,,,no_match,,Not added: Canadian plant (not U.S.)
+RNJ180,NJ DCA list,PORTA-KING BLDG. SYS.,1020 INDUSTRIAL PARK DR.,MONTGOMERY CITY,MO,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ181,NJ DCA list,POWELL ELEC. DIV. HOUSTON,8550 MOSLEY RD.,HOUSTON,TX,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ182,NJ DCA list,POWELL ELEC. DIV. JACINTOPORT,16535 JACINTOPORT BLVD.,HOUSTON,TX,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ183,NJ DCA list,POWELL ELEC. DIV. N. CANTON,"8967 PLEASANTWOOD AVE., NW",NORTH CANTON,OH,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ184,NJ DCA list,POWERCON CORP.,1551 FLORIDA AVE.,SEVERN,MD,,,likely_excluded: industrial/utility only,no_match,,Not added: industrial/utility only (Lincoln flag)
+RNJ185,NJ DCA list,"POWERGRID SOLUTIONS, LLC",3110 PROGRESS DRIVE,OSHKOSH,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ186,NJ DCA list,PREFERRED BLDG. SYS.,143 TWISTBACK RD.,CLAREMONT,NH,,,,match (Preferred Building Systems),Manufacturers row 118,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ187,NJ DCA list,PRESCOTT MFG. LLC,3836 W. BUCKEYE RD.,PHOENIX,AZ,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ188,NJ DCA list,PRITCHARD BROWN,6501 ERDMAN AVE.,BALTIMORE,MD,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ189,NJ DCA list,"PROBUILD CO., LLC",105 EAST 1ST AVE..,OSAKIS,MN,,,,no_match,,Added to Candidates_to_Verify row 183
+RNJ190,NJ DCA list,PROMOD MANUFACTURING,603 S. BROAD ST.,ELLAVILLE,GA,,,,match (Sunbelt Modular / ProMod Manufacturing),Manufacturers row 147,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ191,NJ DCA list,PROTECT CTRL. INC.,3212 OLD HWY 105 EAST,CONROE,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ192,NJ DCA list,"PTMW, INC.",5040 NW US HWY 24,TOPEKA,KS,,,likely_excluded: industrial/utility only,no_match,,Not added: industrial/utility only (Lincoln flag)
+RNJ193,NJ DCA list,"QUALITY ELECTRICAL SYSTEMS, INC.",6500 W. AIRPORT RD.,W. JORDAN,UT,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ194,NJ DCA list,REDGUARD PROD. FAC. – NEW IBERIA,4817 S. LEWIS ST.,NEW IBERIA,LA,,,commercial only,no_match,Excluded row 47,Already on Excluded (not residential / not in scope)
+RNJ195,NJ DCA list,REDGUARD PROD. FAC. – WICHITA,401 W. 47TH ST. S.,WICHITA,KS,,,commercial only,no_match,Excluded row 47,Already on Excluded (not residential / not in scope)
+RNJ196,NJ DCA list,RESTROOM FACILITIES LTD.,1707 COLT CIRCLE,MARBLE FALLS,TX,,,"possible_exclusion: storage/restroom/detention structures - commercial, not residential",no_match,,"Not added: storage/restroom/detention structures - commercial, not residential (Lincoln flag)"
+RNJ197,NJ DCA list,"REVOLUTION HOMES, LLC",700 GRAND AVE. #10,HACKETTSTOWN,NJ,,,,no_match,,Added to Candidates_to_Verify row 184
+RNJ198,NJ DCA list,"RISE MODULAR, OWATONNA MN #1",2355 LEMOND RD.,OWATONNA,MN,,,,no_match,Manufacturers row 123,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ199,NJ DCA list,"RITZ CRAFT CORP. OF PA., INC. (#2)",15 INDUSTRIAL PARK RD.,MIFFLINBURG,PA,,,,match (Ritz-Craft Corporation - Northeast Division),Manufacturers row 125,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ200,NJ DCA list,"RITZ-CRAFT CORP. OF MI, INC.",118 DEAL PARKWAY,JONESVILLE,MI,,,,match (Ritz-Craft Corporation - Midwest Division),Manufacturers row 124,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ201,NJ DCA list,"RITZ-CRAFT CORP. OF PA, INC. (#3)",15 INDUSTRIAL PARK RD.,MIFFLINBURG,PA,,,,match (Ritz-Craft Corporation - Northeast Division),Manufacturers row 125,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ202,NJ DCA list,RIVERSIDE BLDG. CTR.,1015 S. MAIN ST.,LISBON,ND,,,,no_match,,Added to Candidates_to_Verify row 185
+RNJ203,NJ DCA list,"ROBINSON, INC.",2107 AMERICAN BLVD.,DE PERE,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ204,NJ DCA list,"ROBINSON, INC.",2121 AMERICAN BLVD.,DE PERE,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ205,NJ DCA list,"ROBINSON, INC.",2121 S. 30TH ST.,MANITOWOC,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ206,NJ DCA list,"ROBINSON, INC.",1740 EISENHOWER DR.,DE PERE,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ207,NJ DCA list,RT TECH. SOLUTIONS,4484 HODGSON ROAD,NEDERLAND,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ208,NJ DCA list,"S&S MODULARS, LLC",1430 MILLVILLE/BRIDGETON PIKE,MILLVILLE,NJ,,,,no_match,,Added to Candidates_to_Verify row 186
+RNJ209,NJ DCA list,"SAFETY STORAGE, INC.",855 N. 5TH ST.,CHARLESTON,IL,,,"possible_exclusion: storage/restroom/detention structures - commercial, not residential",no_match,,"Not added: storage/restroom/detention structures - commercial, not residential (Lincoln flag)"
+RNJ210,NJ DCA list,SAGEBRUSH BLDG. SYS.,909 N. WHEELING AVE.,TULSA,OK,,,,no_match,Candidates_to_Verify row 93,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ211,NJ DCA list,SCHNEIDER ELEC. IT CORP.,"9701 WINDISCH RD., SUITE 300",WEST CHESTER,OH,,,"possible_exclusion: electrical/power equipment enclosures - industrial, not residential housing",no_match,,"Not added: electrical/power equipment enclosures - industrial, not residential housing (Lincoln flag)"
+RNJ212,NJ DCA list,SCHULT HOMES,201 INDUSTRIAL DR.,REDWOOD FALLS,MN,,,,no_match,Manufacturers row 55,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ213,NJ DCA list,"SEA BOX, INC.",1 SEA BOX DR.,CINNAMINSON,NJ,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ214,NJ DCA list,"SEABOARD CONTROLS, LLC",4807 HWY 90,CROSBY,TX,,,possible_exclusion: industrial controls - not housing,no_match,,Not added: industrial controls - not housing (Lincoln flag)
+RNJ215,NJ DCA list,"SG ECHO, LLC",101 WALDRON RD.,DURANT,OK,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ216,NJ DCA list,SHANGHAI MORIMATSU PHARMACEUTICAL EQPT.,"NO. 1 SENSONG RD.RUGAO PORT AREA, CHANGJIANG DIST",RUGAO CITY,SH,,,possible_exclusion: pharmaceutical/lab equipment - not housing,no_match,,Not added: plant in China; pharmaceutical equipment
+RNJ217,NJ DCA list,SHANGHAI MORIMATSU PHARMACEUTICAL EQPT.,"NO. 2 XINGGANG RD., BIXI ST.",CHANGSHU CITY,SH,,,possible_exclusion: pharmaceutical/lab equipment - not housing,no_match,,Not added: plant in China; pharmaceutical equipment
+RNJ218,NJ DCA list,SHEA CONCRETE PRODUCTS – AMSBURY,87 HAVERHILL RD.,AMESBURY,MA,,,possible_exclusion: concrete/precast products - not modular housing,no_match,,Not added: concrete/precast products - not modular housing (Lincoln flag)
+RNJ219,NJ DCA list,SHELTER ONE,5887 MONUMENT DR.,GRANTS PASS,OR,,,likely_excluded: industrial/utility only,no_match,,Not added: industrial/utility only (Lincoln flag)
+RNJ220,NJ DCA list,SHELTER WORKS,2616 S. THIRD ST.,ST. LOUIS,MO,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ221,NJ DCA list,"SHOWCASE HOMES, INC.",11757 STATE HWY 29 S.,PARKERS PRAIRIE,MN,,,,no_match,,Added to Candidates_to_Verify row 187
+RNJ222,NJ DCA list,"SIGNATURE BUILDING SYSTEMS OF PA, LLC",1004 SPRINGBROOK AVE.,MOOSIC,PA,,,,"match (Signature Building Systems of PA, LLC)",Manufacturers row 129,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ223,NJ DCA list,SIMPLEX IND. (PLANT #1),1 SIMPLEX DR.,SCRANTON,PA,,,,match (Simplex Homes),Manufacturers row 130,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ224,NJ DCA list,SK2 BUILD SITE,391 INDUSTRIAL DR.,ALTONA,MB,,,,no_match,Candidates_to_Verify row 63,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ225,NJ DCA list,SKYLINE HOMES (#243),1023 HWY 61 N,LANCASTER,WI,,,likely_excluded: Skyline is now Champion; this plant is no longer open,no_match,Candidates_to_Verify row 126,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ226,NJ DCA list,SMI HOMES,101 SOUTHERN AVE.,STRATTANVILLE,PA,,,,"match (Structural Modular Innovations, LLC.)",Manufacturers row 139,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ227,NJ DCA list,"SOUTH COAST TECH., INC",16503 PARK ROW DRIVE,HOUSTON,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ228,NJ DCA list,"SOUTHEAST MOD. MFG., LEESBURG",2500 INDUSTRIAL ST.,LEESBURG,FL,,,,match (Sunbelt Modular / Southeast Modular Manufacturing),Manufacturers row 149,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ229,NJ DCA list,"SPECIALIZED STR., INC.",2400 SPRINGHEAD CHURCH RD.,WILLACOOCHEE,GA,,,,match (Sunbelt Modular / Specialized Structures),Manufacturers row 150,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ230,NJ DCA list,SPEED SPACE,65213 CR 31,GOSHEN,IN,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ231,NJ DCA list,SPEED SPACE (PLANT 2),655 N. TOMAHAWK TRAIL,NAPPANEE,IN,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ232,NJ DCA list,STARFLITE SYS,22329 PERRY HWY,ZELIENOPLE,PA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ233,NJ DCA list,STATES MFG. CORP. 02,11500 DAYTON PKWY,MAPLE GROVE,MN,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ234,NJ DCA list,"STEEL CELL OF NORTH AMERICA, INC.",510 INDUSTRIAL PARK RD.,BALDWIN,GA,,,likely_excluded: commercial only,no_match,,Not added: commercial only (Lincoln flag)
+RNJ235,NJ DCA list,STRATFORD HOMES LP,212501 STATE HWY 97,STRATFORD,WI,,,,no_match,Candidates_to_Verify row 41,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ236,NJ DCA list,STURDISTEEL CO.,131B AVA DR.,HEWITT,TX,,,likely_excluded: commercial only,no_match,,Not added: commercial only (Lincoln flag)
+RNJ237,NJ DCA list,SYSTECON LLC,6121 SCHUMACHER PARK DR.,WEST CHESTER,OH,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ238,NJ DCA list,SYSTEMS CONTROL,3201 E. INDUSTRIAL DR.,IRON MOUNTAIN,MI,,,possible_exclusion: industrial controls - not housing,no_match,,Not added: industrial controls - not housing (Lincoln flag)
+RNJ239,NJ DCA list,"T AND R CUSTOM, INC.",892 N. BROAD ST.,ELLAVILLE,GA,,,,no_match,Candidates_to_Verify row 162,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ240,NJ DCA list,THE PUBLIC RESTROOM CO.,2587 BUSINESS PKWY.,MINDEN,NV,,,"possible_exclusion: storage/restroom/detention structures - commercial, not residential",no_match,Excluded row 46,Already on Excluded (not residential / not in scope)
+RNJ241,NJ DCA list,THE WHITING-TURNER CONTRACTING CO.,"2850 MAGNOLIA ST., BLDG. 2",ORANGEBURG,SC,,,"possible_exclusion: general contractor/construction company, not a manufacturer",no_match,Manufacturers row 156,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ242,NJ DCA list,THERMO BOND BLDG. (PLANT 1),1103 W. MAIN ST.,ELK POINT,SD,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ243,NJ DCA list,THERMO BOND BLDG. (PLANT 2),58140 CR 3 SOUTH,ELKHART,IN,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ244,NJ DCA list,THERMO BOND BLDG. (PLANT 3),300 N. HERITAGE RD.,BRANDON,SD,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ245,NJ DCA list,TITAN HOMES,951 ROUTE 12 SOUTH,SANGERFIELD,NY,,,,"match (Champion Home Builders, Inc. / Champion Home Builders #19)",Manufacturers row 38,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ246,NJ DCA list,"TITAN MOD. SYS., INC.",162 INDUSTRIAL DR.,ALMA,GA,,,,no_match,Candidates_to_Verify row 163,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ247,NJ DCA list,"TRACHTE SOUTHEAST, LLC",1249 CLARY CONNECTOR,EASTANOLLE,GA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ248,NJ DCA list,"TRACHTE, LLC – BRAUN",350 BRAUN RD.,OREGON,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ249,NJ DCA list,"TRACHTE, LLC – BURR OAK",422 N. BURR OAK AVE.,OREGON,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ250,NJ DCA list,TRIVAN,1385 W. SMITH RD.,FERNDALE,WA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ251,NJ DCA list,TXLA SYSTEMS,23015 FM 2100,HUFFMAN,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ252,NJ DCA list,U.S. CHEMICAL STORAGE PLANT 1,1806 RIVER ST.,WILKESBORO,NC,,,likely_excluded: commercial only,no_match,,Not added: commercial only (Lincoln flag)
+RNJ253,NJ DCA list,"UNITED CONCRETE PRODUCTS, INC.",173 CHURCH ST.,YALESVILLE,CT,,,possible_exclusion: concrete/precast products - not modular housing,no_match,,Not added: concrete/precast products - not modular housing (Lincoln flag)
+RNJ254,NJ DCA list,"UNITED CONCRETE PRODUCTS, INC.",475 MAIN ST.,YALESVILLE,CT,,,possible_exclusion: concrete/precast products - not modular housing,no_match,,Not added: concrete/precast products - not modular housing (Lincoln flag)
+RNJ255,NJ DCA list,"USEMCO, INC.",1730 REZIN RD.,TOMAH,WI,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ256,NJ DCA list,"VALTRONICS SOLUTIONS, INC.",43 RITMORE DR.,RAVENSWOOD,WV,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ257,NJ DCA list,"VBC BERWICK, LLC",159 POWER HOUSE RD.,BERWICK,PA,,,,no_match,Manufacturers row 162,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ258,NJ DCA list,"VFP, INC. (PLANT 1, CONCRETE)",540 INDUSTRIAL PARK RD.,DUFFIELD,VA,,,possible_exclusion: concrete/precast products - not modular housing,no_match,,Not added: concrete/precast products - not modular housing (Lincoln flag)
+RNJ259,NJ DCA list,"VFP, INC. – LIGHTWEIGHT (PLANT 2)",402 INDUSTRIAL PARK DR.,DUFFIELD,VA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ260,NJ DCA list,"VOLTA, LLC",1616 GEARS RD.,HOUSTON,TX,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ261,NJ DCA list,"WESTCHESTER MOD. HOMES, INC.",30 REAGANS MILL RD.,WINGDALE,NY,,,,"match (Westchester Modular Homes, Inc.)",Manufacturers row 169,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ262,NJ DCA list,WHITLEY EAST,64 HESS RD.,LEOLA,PA,,,,match (Sunbelt Modular / Whitley Manufacturing East),Manufacturers row 152,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ263,NJ DCA list,WHITLEY EVERGREEN,14219 SMOKEY POINT BLVD.,MARYSVILLE,WA,,,,match (Sunbelt Modular / Whitley Manufacturing - Evergreen),Manufacturers row 151,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ264,NJ DCA list,WHITLEY MFG. CO.,201 W. FIRST STREET SOUTH,SOUTH WHITLEY,IN,,,,match (Sunbelt Modular / Whitley Manufacturing South Whitley),Manufacturers row 153,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ265,NJ DCA list,WHITLEY MFG. CO. (MOD. BLDRS 2756),2756 FORT WAYNE RD.,ROCHESTER,IN,,,,possible_match (Sunbelt Modular / Whitley Modular Builders),Manufacturers row 154,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ266,NJ DCA list,WHITLEY MFG. CO. (MOD. BLDRS 3089),3089 FORT WAYNE RD.,ROCHESTER,IN,,,,match (Sunbelt Modular / Whitley Modular Builders),Manufacturers row 154,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ267,NJ DCA list,WILLSCOT – BOSTON SOUTH,215 MILLENIUM CIRCLE,LAKEVILLE,MA,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ268,NJ DCA list,WILLSCOT – CHERRY HILL,1900 OLD CUTHBERT RD.,CHERRY HILL,NJ,,,likely_excluded: commercial only,no_match,,Not added: commercial only (Lincoln flag)
+RNJ269,NJ DCA list,WILLSCOT – CHICAGO SOUTH,1425 GIFFORD RD.,ELGIN,IL,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ270,NJ DCA list,"WISCONSIN HOMES, INC.",425 W. MCMILLAN ST.,MARSHFIELD,WI,,,,no_match,Candidates_to_Verify row 123,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ271,NJ DCA list,"WOOD GROUP USA, INC.",4057 CAMELOT CIRCLE,LONGMONT,CO,,,,no_match,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RNJ272,NJ DCA list,XTREME CUBES CORP.,8350 EASTGATE RD.,HENDERSON,NV,,,,match (Xtreme Cubes Corporation),Manufacturers row 171,Matched: added StateRegistry-NJ source and NJ to Areas Served
+RNJ274,"Source: New Jersey DCA approved industrialized/modular manufacturer list (flagged v2 file from Lincoln, received 11/16/2026).",,,,,,,,,,

@@ -38,10 +38,14 @@ TABS = {
     "StateRegistry_MI": (1, "RMI", "state_registry_mi.csv"),
     "StateRegistry_GA": (1, "RGA", "state_registry_ga.csv"),
     "StateRegistry_UT": (1, "RUT", "state_registry_ut.csv"),
+    "StateRegistry_NJ": (1, "RNJ", "state_registry_nj.csv"),
+    "StateRegistry_PA": (1, "RPA", "state_registry_pa.csv"),
+    "StateRegistry_ME": (1, "RME", "state_registry_me.csv"),
+    "StateRegistry_WI": (1, "RWI", "state_registry_wi.csv"),
     "Change_Log": (None, "L", "change_log.csv"),
 }
 # Columns that hold personal contact details; they go to data/private only.
-PRIVATE_COLS = ["Email", "Email notes", "Survey_Contact / Contact", "Outreach_Notes (latest)"]
+PRIVATE_COLS = ["Email", "Email notes", "Survey_Contact / Contact", "Outreach_Notes (latest)", "Contact"]
 OUTREACH_COLS = ["Outreach_Status", "Outreach_Date", "Survey_Contact / Contact", "Outreach_Notes (latest)"]
 
 PRODUCT = {"Volumetric": "modular_volumetric", "Panelized-Only": "panelized",
@@ -89,6 +93,14 @@ def main(path):
         public = df.drop(columns=[c for c in PRIVATE_COLS if c in df.columns])
         # notes can quote email addresses; keep those out of the committed CSVs
         public = public.apply(lambda col: col.str.replace(EMAIL, "[email]", regex=True))
+        if name == "Change_Log" and "Column" in public.columns:
+            # contact and outreach edits stay private: keep the row, hide the values
+            mask = public["Column"].isin(PRIVATE_COLS + ["Contact", "Outreach_Status", "Outreach_Date"])
+            public.loc[mask, ["Old value", "New value"]] = "[private]"
+        # registry address fields sometimes hold a person's name instead of a street; drop those
+        for col in ("Address as listed", "Address"):
+            if col in public.columns:
+                public[col] = public[col].where(public[col].fillna("").str.contains(r"\d"), "")
         public.to_csv(OUT / fname, index=False)
         print(f"{name}: {len(df)} rows -> {OUT / fname}")
 

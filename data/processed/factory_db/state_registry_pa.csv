@@ -1,0 +1,123 @@
+row_id,Registry list,Name as listed,Address as listed,City,State,Phone,Approved for / license,Lincoln note,Lincoln duplicate flag,Database match,Action taken
+RPA2,PA DCED list,"4 Square Modular 1, LLC",,Elkhart,IN,,Commercial,,,Candidates_to_Verify row 98,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA3,PA DCED list,A1 Sheet Metal Inc.,,Tulsa,OK,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA4,PA DCED list,Adventure Homes,,Garrett,IN,,Residential,,,Manufacturers row 6,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA5,PA DCED list,"AGM Structures, LLC.",,Elkhart,IN,,Commercial,,,Candidates_to_Verify row 99,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA6,PA DCED list,AMR PEMCO,,Bluefield,VA,,Commercial Buildings,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA7,PA DCED list,Apex Homes,,Middleburg,PA,,Residential / Commercial,,,Manufacturers row 9,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA8,PA DCED list,"Apollo Modular Systems, Inc.",,Douglas,GA,,Commercial,,,Candidates_to_Verify row 165,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA9,PA DCED list,AIS Enclosure Systems,,Chattanooga,TN,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA10,PA DCED list,AIS Enclosure Systems,,Millington,MD,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA11,PA DCED list,Arning Companies Inc.,,Clarksville,AR,,Commercial,,,Manufacturers row 11,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA12,PA DCED list,Ascend Automation & Controls LLC,,Houston,TX,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA13,PA DCED list,Benson Woodworking Company,,Keene,NH,,Residential,,,Manufacturers row 16,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA14,PA DCED list,BIG Enterprises,,South El Monte,CA,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA15,PA DCED list,Bird-In-Hand Pet Structures,,Willow Street,PA,,Residential / Commercial,,,,"Not added: pet structures and sheds, not housing"
+RPA16,PA DCED list,Blackhawk Equipment,,Arvada,CO,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA17,PA DCED list,"Blox, LLC",,Bessemer,AL,,Commercial,,,Excluded row 11,Already on Excluded (not residential / not in scope)
+RPA18,PA DCED list,"Buckhorn Builders, Inc.",,Millersbug,OH,,Residential,,,Manufacturers row 21,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA19,PA DCED list,C & B Custom Modular,,Bristol,IN,,Commercial,,,Manufacturers row 142,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA20,PA DCED list,"Cellxion, LLC",,Bossier City,LA,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA21,PA DCED list,"Champion Home Builders, #7",,Claysburg,PA,,Residential,,,Manufacturers row 41,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA22,PA DCED list,"Champion Home Builders, #270",,Strattanville,PA,,Residential / Commercial,,,Manufacturers row 40,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA23,PA DCED list,"Champion Modular, Inc. #41",,Liverpool,PA,,Residential / Commercial,,,Manufacturers row 43,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA24,PA DCED list,Champion Skyline Corporation #231,,Sugarcreek,OH,,Residential,,,Manufacturers row 44,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA25,PA DCED list,Champion Home Builders (Titan),,Sangerfield,NY,,Residential,,,Manufacturers row 38,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA26,PA DCED list,"CID Associates, Inc.",,Sarver,PA,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA27,PA DCED list,CMH Manufacturing,,Richfield,NC,,Residential / Commercial,,,Manufacturers row 49,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA28,PA DCED list,"CMH Mfg, dba Marlette/Schult",,Lewistown,PA,,Residential,,,Manufacturers row 58,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA29,PA DCED list,Cavco Manufacturing LLC,,Shippenville,PA,,Residential,,,Manufacturers row 35,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA30,PA DCED list,Cavco Manufacturing LLC,,Clarion,PA,,Residential,,,Manufacturers row 23,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA31,PA DCED list,"Concept Unlimited, Inc.",,Columbia,SC,,Commercial Buildings,,,Candidates_to_Verify row 139,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA32,PA DCED list,Cozy Cabins,,New Holland,PA,,Residential,,,Manufacturers row 60,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA33,PA DCED list,Creative Modular Construction 123,,Springfield,MO,,Commercial Buildings,,,Candidates_to_Verify row 100,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA34,PA DCED list,Creative Modular Construction,,Springfield,MO,,Commercial Buildings,,,Candidates_to_Verify row 100,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA35,PA DCED list,Cupertino Electric Inc,,Edgerton,WI,,Commercial Buildings,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA36,PA DCED list,"CXT Inc., dba Carr Concrete",,Williamstown,WV,,Commercial Buildings,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA37,PA DCED list,Dant Clayton Corporation,,Louisville,KY,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA38,PA DCED list,Deer Run Cabins,,Campbellsville,KY,,Residential,,,Manufacturers row 62,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA39,PA DCED list,"Diamond Builders, Inc.",,Douglas,GA,,Commercial,,,Candidates_to_Verify row 127,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA40,PA DCED list,"Durapods, LLC",,Chalfont,PA,,Residential / Commercial Pod Units,I did not include this because it's exclusively pod bathrooms used in commercial buildings,,,Not added: bathroom pods for commercial buildings only (Lincoln)
+RPA41,PA DCED list,Eagle River Homes,,Leola,PA,,Residential,,,Manufacturers row 64,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA42,PA DCED list,Engineered Fluid Inc.,,Centralia,IL,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA43,PA DCED list,Esh Construction dba Modern Country Homes,,Newville,PA,,Residential,,,Manufacturers row 65,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA44,PA DCED list,Fibrebond Corporation,,Minden,LA,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA45,PA DCED list,"First String Space, Inc.",,Pearson,GA,,Commercial,,,Candidates_to_Verify row 161,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA46,PA DCED list,"First String Space, Inc.",,Pearson,GA,,Residential,NO idea why they're listed as residential here because everything on website is commercial AND their entry on MBI says they're commercial only lol,,Candidates_to_Verify row 161,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA47,PA DCED list,"Frey-Moss Structures, Inc.",,Conyers,GA,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA48,PA DCED list,G2 Engineered Structures,,Lake City,PA,,Residential / Commercial,,,Manufacturers row 68,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA49,PA DCED list,Gas Chromatography Systems Maximum,,Houston,TX,,Commercial Buildings,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA50,PA DCED list,Guardian Booth,,Waynesboro,PA,,Commercial,,,,Not added: guard booths (commercial); not the Guardian Prefab housing plant
+RPA51,PA DCED list,Harry Vine Homes,,Pittsburgh,PA,,Residential,,,Manufacturers row 72,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA52,PA DCED list,Homes by JDM Structures,,Millersburg,OH,,Residential,,,Manufacturers row 74,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA53,PA DCED list,Honomobo Corporation,,Nisku,Alberta Canada,,Residential,,,Manufacturers row 75,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA54,PA DCED list,Icon Legacy Custom Modular Homes,,Selinsgrove,PA,,Residential / Commercial,,,Manufacturers row 77,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA55,PA DCED list,Integrity Buildings LLC,,Middletown,OH,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA56,PA DCED list,Intermountain Electronics,,South Point,OH,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA57,PA DCED list,"Interstates, Inc.",,Topeka,KS,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA58,PA DCED list,"Keystone Structures, Inc.",,Kennett Square,PA,,Commercial,,,Candidates_to_Verify row 125,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA59,PA DCED list,"KPS Global, LLC",,Fort Worth,TX,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA60,PA DCED list,"M & M Coastal Manufacturing, Inc.",,Houston,TX,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA61,PA DCED list,Madison Industries of GA,,Conyers,GA,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA62,PA DCED list,Manufactured Housing Enterprises,,Bryan,OH,,Residential,,,Manufacturers row 91,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA63,PA DCED list,Mardan Fabrication Inc.,,Harrison Township,MI,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA64,PA DCED list,Mobile Facility Engineering,,Cassopolis,MI,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA65,PA DCED list,MODLOGIQ,,New Holland,PA,,Residential / Commercial,,,Manufacturers row 95,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA66,PA DCED list,Modern Living Solutions,,Knox,PA,,Residential,,,Manufacturers row 94,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA67,PA DCED list,"Modular Builders 3089, Plant 1",,Rochester,IN,,Commercial,,,Manufacturers row 154,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA68,PA DCED list,"Modular Builders 2756, Plant 2",,Rochester,IN,,Commercial,,,Manufacturers row 154,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA69,PA DCED list,"Modular Building Systems of PA, Plant 1",,Middleburg,PA,,Residential / Commercial,,,Manufacturers row 97,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA70,PA DCED list,"Modular Building Systems of PA, Plant 2",,Middleburg,PA,,Residential / Commercial,,,Manufacturers row 97,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA71,PA DCED list,Modular Connections LLC,,Bessemer,AL,,Commercial,,,Candidates_to_Verify row 130,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA72,PA DCED list,Modular Steel Systems,,Bloomsburg,PA,,Residential,,,Manufacturers row 99,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA73,PA DCED list,"Module Manufacturing, LLC",,Carnegie,PA,,Residential,,,,Added to Candidates_to_Verify row 173
+RPA74,PA DCED list,Muncy Homes,,Muncy,PA,,Residential / Commercial,,,Manufacturers row 104,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA75,PA DCED list,National Modular Mfg.,,Providence,NC,,Commercial,,,Excluded row 39,Already on Excluded (not residential / not in scope)
+RPA76,PA DCED list,Nationwide Custom Homes [NOTE: Now Cavco],,Martinsville,VA,,Residential,,,Manufacturers row 30,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA77,PA DCED list,New Energy Works of Rochester,,Rochester,NY,,Residential,"This doesn't seem like modular building at all, just general contracting",,,"Not added: timber-frame / general contracting, not modular (Lincoln)"
+RPA78,PA DCED list,Cavco Manufacturing LLC,,Emlenton,PA,,Residential,,,Manufacturers row 29,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA79,PA DCED list,"Offsite Builders, LLC",,Woodbury Heights,NJ,,Residential / Commercial PODs,Looks like they just do PODs,,Manufacturers row 110,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA80,PA DCED list,"Panel Built, Inc.",,Blairsville,GA,,Commercial,,,Excluded row 44,Already on Excluded (not residential / not in scope)
+RPA81,PA DCED list,Panelmatic Bldg. Solutions,,Brookfield,OH,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA82,PA DCED list,Par-Kut International,,Harrison Twp,MI,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA83,PA DCED list,Parkline Inc.,,Eleanor,WV,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA84,PA DCED list,Parkline Inc.,,Hitchcock,TX,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA85,PA DCED list,PFB Manufacturing [complicated business structure],,Blissfield,MI,,Residential,,,,Added to Candidates_to_Verify row 174
+RPA86,PA DCED list,Pleasant Valley Modular Homes,,Pine Grove,PA,,Residential,,,Manufacturers row 117,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA87,PA DCED list,Porta King Building Systems,,Montgomery,MO,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA88,PA DCED list,PROMOD Manufacturing,,Ellaville,GA,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA89,PA DCED list,"PTMW, Inc.",,Topeka,KS,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA90,PA DCED list,PTW Structural Solutions,,Rocky View County,Alberta Canada,,Commercial,,,,Not added: Canadian commercial plant
+RPA91,PA DCED list,R. Lute's Inc,,Rosharon,TX,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA92,PA DCED list,Ritz Craft Corporation Plant 2,,Mifflinburg,PA,,Residential,,,Manufacturers row 125,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA93,PA DCED list,Ritz Craft Corporation Plant 3,,Mifflinburg,PA,,Residential,,,Manufacturers row 125,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA94,PA DCED list,Rolling Acres Cabins - Factory 1,,Munfordville,KY,,Residential / Commercial PODs,,,,Added to Candidates_to_Verify row 175
+RPA95,PA DCED list,Rolling Acres Cabins - Factory 2,,Munfordville,KY,,Residential / Commercial PODs,,,,Added to Candidates_to_Verify row 176
+RPA96,PA DCED list,"Safety Storage, Inc.",,Charleston,IL,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA97,PA DCED list,Signature Building Systems,,Moosic,PA,,Residential / Commercial,,,Manufacturers row 129,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA98,PA DCED list,Simplex Industries,,Scranton,PA,,Residential,,,Manufacturers row 130,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA99,PA DCED list,"Specialized Structures, Inc.",,Willacoochee,GA,,Commercial,,,Manufacturers row 150,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA100,PA DCED list,Steel River Building Systems,,Pottstown,PA,,Residential / Commercial,,,Manufacturers row 136,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA101,PA DCED list,Structural Modular Innovations,,Strattanville,PA,,Residential / Commercial,,,Manufacturers row 139,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA102,PA DCED list,TDG Energy Services,,Katy,TX,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA103,PA DCED list,"Thermo Bond Buildings, LLC, Plant 1",,Elk Point,SC,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA104,PA DCED list,"Thermo Bond Buildings, LLC, Plant 2",,Elkhart,IN,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA105,PA DCED list,"Thermo Bond Buildings, LLC, Plant 3",,Brandon,SD,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA106,PA DCED list,The Whiting-Turner Contracting Co. Bldg 2,,Orangeburg,SC,,Commercial,,,Manufacturers row 156,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA107,PA DCED list,"Titan Modular Systems, Inc.",,Alma,GA,,Commercial,,,Candidates_to_Verify row 163,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA108,PA DCED list,"T & R Custom, Inc.",,Ellaville,GA,,Commercial,,,Candidates_to_Verify row 162,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA109,PA DCED list,"Trachte, LLC",,Eastanolle,GA,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA110,PA DCED list,"Trachte, LLC",,Oregon,WI,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA111,PA DCED list,Trophy Sheds,,Jersey Shore,PA,,Residential,Storage only,,,Not added: storage sheds only (Lincoln)
+RPA112,PA DCED list,United Concrete Products,,Wallingford,CT,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA113,PA DCED list,"USEMCO, Inc",,Tomah,WI,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA114,PA DCED list,Valtronics Solutions,,Ravenswood,WV,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA115,PA DCED list,VBC Manufacturing,,Berwick,PA,,Residential / Commercial,,,Manufacturers row 162,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA116,PA DCED list,Ventaire LLC dba Sagebush Building Systems,,Tulsa,OK,,Commercial,,,Candidates_to_Verify row 93,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA117,PA DCED list,VOLTA LLC,,Houston,TX,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA118,PA DCED list,Westchester Modular Homes,,Wingdale,NY,,Residential,,,Manufacturers row 169,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA119,PA DCED list,"Williams Scotsman, Inc.",,Cherry Hill,NJ,,Commercial,,,,"Not added: commercial, industrial or equipment manufacturer (not housing)"
+RPA120,PA DCED list,Whitley East LLC,,Leola,PA,,Commercial,,,Manufacturers row 152,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA121,PA DCED list,Whitley Manufacturing Co,,South Whitley,IN,,Commercial,,,Manufacturers row 153,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA122,PA DCED list,"Zook Built, LLC",,New Holland,PA,,Residential,,,Candidates_to_Verify row 83,Matched: added StateRegistry-PA source and PA to Areas Served
+RPA124,"Source: Pennsylvania DCED approved manufacturer list with ""Approved For"" (file from Lincoln, received 11/16/2026).",,,,,,,,,,
